@@ -44,102 +44,92 @@
                 </div>
                 <form action="#" method="post" id="main_searchbar">
                     <div class="row g-4">
-                        <div class="col-lg-10">
-                            <div class="row gx-0 gy-4">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single destination-box">
-                                        <div class="searchbox-icon ">
-                                            <i class="bi bi-geo-alt"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="deatination_drop">Destination</label>
-                                            <select data-placeholder="Where Are You Going?" id="deatination_drop">
-<option value="">Where Are You Going?</option>
-<optgroup label="India">
+                    <div class="col-lg-10">
+                        <div class="row gx-0 gy-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single destination-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="deatination_drop">Điểm Đến</label>
+                                        <select data-placeholder="Bạn Muốn Đi Đâu?" id="deatination_drop">
+<option value="">Bạn Muốn Đi Đâu?</option>
+<optgroup label="Việt Nam">
 <option>
-Solt Lake
+TP. Hồ Chí Minh
 </option>
 <option>
-Kolkata
+Vũng Tàu
 </option>
 <option>
-Mohamia
+Phan Thiết
 </option>
 <option>
-Mumbai
+Đà Nẵng
 </option>
 <option>
-New Delhi
-</option>
+Hội An
+ </option>
 </optgroup>
-<optgroup label=" Bangladash">
-<option>
-Cox's Bazer
-</option>
- <option>
-Rangamati
-</option>
-<option>
-Banderban
-</option>
-</optgroup>
+
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-text-paragraph"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="activity-dropdown">Travel Type</label>
-                                            <select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
-<option value="">All Activity</option>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-text-paragraph"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="activity-dropdown">Loại Hình Du Lịch</label>
+                                        <select class="defult-select-drowpown" data-placeholder="Tất Cả Hoạt Động" id="activity-dropdown">
+<option value="">Tất Cả Hoạt Động</option>
 <option value="1">Type 1</option>
 <option value="2">Type 2</option>
 <option value="3">Type 3</option>
 <option value="4">Type 4</option>
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-person-plus"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="person-dropdown">Person</label>
-                                            <select class="defult-select-drowpown" id="person-dropdown">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-person-plus"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="person-dropdown">Số Người</label>
+                                        <select class="defult-select-drowpown" id="person-dropdown">
 <option selected value="0">01</option>
 <option value="1">02</option>
 <option value="2">03</option>
 <option value="3">04</option>
 <option value="4">05</option>
 </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single date-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-capslock"></i>
-                                        </div>
-                                        <div class="searchbox-input date-picker-input">
-                                            <label for="datepicker">When</label>
-                                            <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="main-form-submit">
-                                <button type="submit">Find Now</button>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single date-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-capslock"></i>
+                                    </div>
+                                    <div class="searchbox-input date-picker-input">
+                                        <label for="datepicker">Ngày Đi</label>
+                                        <input placeholder="Hãy chọn ngày đi" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2">
+                        <div class="main-form-submit">
+                            <button type="submit">Tìm Ngay</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -158,7 +148,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
-                        <h5>Adventure</h5>
+                        <h5>Phiêu Lưu</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -166,7 +156,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
-                        <h5>Group Tour</h5>
+                        <h5>Du Lịch</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -174,7 +164,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
-                        <h5>Couple Tour</h5>
+                        <h5>Du Lịch Đôi</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -182,7 +172,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
-                        <h5>Single Tour</h5>
+                        <h5>Du Lịch Đơn Thân</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -190,7 +180,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
-                        <h5>Honeymoon</h5>
+                        <h5>Tuần Trăng Mật</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -198,7 +188,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
-                        <h5>Sea Beach</h5>
+                        <h5>Bãi Biển</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -206,7 +196,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
-                        <h5>Mountain Tour</h5>
+                        <h5>Thám Hiểm Núi</h5>
                     </a>
                 </div>
             </div>
@@ -331,7 +321,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>3.990.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -353,7 +343,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>2.490.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -375,7 +365,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>5.290.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -398,7 +388,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>690.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -420,7 +410,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>1.890.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -442,7 +432,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>2.690.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -464,7 +454,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>1.890.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -486,7 +476,7 @@ Banderban
                                             <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>Chỉ Từ</span>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                                             <h6>1.490.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
@@ -497,7 +487,7 @@ Banderban
                     <div class="row">
                         <div class="col-lg-12">
                             <nav>
-                                <ul class="pagination pagination-style-one justify-content-center pt-80">
+                                <ul id="pagination-demo" class="pagination pagination-style-one justify-content-center pt-80">
                                     <li class="page-item page-arrow"><a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a></li>
                                     <li class="page-item active"><a class="page-link" href="#">01</a></li>
                                     <li class="page-item"><a class="page-link" href="#">02</a></li>
@@ -518,7 +508,8 @@ Banderban
                             <div class="widget-body">
                                 <form action="#" method="post" id="blog-sidebar-search">
                                     <div class="search-input-group">
-                                        <input type="search" placeholder="Your Destination">
+                                        <input type="search" placeholder="Tìm Kiếm">
+                                        
                                         <button type="submit">Tìm</button>
                                     </div>
                                 </form>
@@ -532,31 +523,43 @@ Banderban
                                 <ul>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate">
-<i class="bi bi-chevron-double-right"></i> TP. Hồ Chí Minh
+<i class="bi bi-chevron-double-right"></i> Phiêu Lưu
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate2">
-<i class="bi bi-chevron-double-right"></i>Hà Nội
+<i class="bi bi-chevron-double-right"></i>Du Lịch
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate2">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate3">
- <i class="bi bi-chevron-double-right"></i> Đà Nẵng
+ <i class="bi bi-chevron-double-right"></i> Du Lịch Đôi
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate3">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate4">
-<i class="bi bi-chevron-double-right"></i> Nha Trang
+<i class="bi bi-chevron-double-right"></i> Du Lịch Đơn Thân
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate4">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate5">
-<i class="bi bi-chevron-double-right"></i>Đà Lạt
+<i class="bi bi-chevron-double-right"></i>Tuần Trăng Mật
+</label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+<i class="bi bi-chevron-double-right"></i>Bãi Biển
+</label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+<i class="bi bi-chevron-double-right"></i>Thám Hiểm Núi
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate5">
                                     </li>
@@ -600,6 +603,98 @@ Banderban
 </label>
                                     </li>
                                 </ul>
+                            </div>
+                        </aside>
+                        <aside class="package-widget widget-tour-categoris mt-30">
+                            <div class="widget-title">
+                                <h4>Mức giá</h4>
+                            </div>
+                            <div class="widget-body">
+                                <ul>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Dưới 5 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 5 triệu tới 10 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 10 triệu tới 15 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 15 triệu tới 20 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 20 triệu tới 30 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Trên 30 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                </ul>
+                                
+                                   
+                            </div>
+                        </aside>
+                        <aside class="package-widget widget-duration mt-30">
+                            <div class="widget-title">
+                                <h4>Số lượng</h4>
+                            </div>
+                            <div class="widget-body">
+                                <ul>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura1">
+                                        <label class="form-check-label" for="dura1">
+1 Người
+</label>
+                                    </li>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura2">
+                                        <label class="form-check-label" for="dura2">
+2-3 Người
+</label>
+                                    </li>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura3">
+                                        <label class="form-check-label" for="dura3">
+4-5 Người
+</label>
+                                    </li>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura4">
+                                        <label class="form-check-label" for="dura4">
+Trên 5 Người
+</label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside class="package-widget widget-recent-package-entries mt-30">
+                            <div class="widget-title">
+                                <h4>Ngày đi</h4>
+                            </div>
+                            <div class="widget-body">
+                                <div class="search-input-group">
+                                    <input type="date">
+                                    
+                                </div>
                             </div>
                         </aside>
                         <aside class="package-widget widget-recent-package-entries mt-30">
@@ -667,11 +762,8 @@ Banderban
                                 </ul>
                             </div>
                         </aside>
-                        <aside class="widget-banner mt-30">
-                            <a href="#">
-<img src="assets/images/banner/sidebar-banner.png" alt="" class="img-fluid">
-</a>
-                        </aside>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -776,6 +868,7 @@ Banderban
     <script src="assets/js/jquery-ui.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/paginationJQUERY.js"></script>
 </body>
 
 </html>

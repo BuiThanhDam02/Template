@@ -44,102 +44,92 @@
                 </div>
                 <form action="#" method="post" id="main_searchbar">
                     <div class="row g-4">
-                        <div class="col-lg-10">
-                            <div class="row gx-0 gy-4">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single destination-box">
-                                        <div class="searchbox-icon ">
-                                            <i class="bi bi-geo-alt"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="deatination_drop">Destination</label>
-                                            <select data-placeholder="Where Are You Going?" id="deatination_drop">
-<option value="">Where Are You Going?</option>
-<optgroup label="India">
+                    <div class="col-lg-10">
+                        <div class="row gx-0 gy-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single destination-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="deatination_drop">Điểm Đến</label>
+                                        <select data-placeholder="Bạn Muốn Đi Đâu?" id="deatination_drop">
+<option value="">Bạn Muốn Đi Đâu?</option>
+<optgroup label="Việt Nam">
 <option>
-Solt Lake
+TP. Hồ Chí Minh
 </option>
 <option>
-Kolkata
+Vũng Tàu
 </option>
 <option>
-Mohamia
+Phan Thiết
 </option>
 <option>
-Mumbai
+Đà Nẵng
 </option>
 <option>
-New Delhi
-</option>
+Hội An
+ </option>
 </optgroup>
-<optgroup label=" Bangladash">
-<option>
-Cox's Bazer
-</option>
- <option>
-Rangamati
-</option>
-<option>
-Banderban
-</option>
-</optgroup>
+
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-text-paragraph"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="activity-dropdown">Travel Type</label>
-                                            <select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
-<option value="">All Activity</option>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-text-paragraph"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="activity-dropdown">Loại Hình Du Lịch</label>
+                                        <select class="defult-select-drowpown" data-placeholder="Tất Cả Hoạt Động" id="activity-dropdown">
+<option value="">Tất Cả Hoạt Động</option>
 <option value="1">Type 1</option>
 <option value="2">Type 2</option>
 <option value="3">Type 3</option>
 <option value="4">Type 4</option>
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-person-plus"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="person-dropdown">Person</label>
-                                            <select class="defult-select-drowpown" id="person-dropdown">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-person-plus"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="person-dropdown">Số Người</label>
+                                        <select class="defult-select-drowpown" id="person-dropdown">
 <option selected value="0">01</option>
 <option value="1">02</option>
 <option value="2">03</option>
 <option value="3">04</option>
 <option value="4">05</option>
 </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single date-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-capslock"></i>
-                                        </div>
-                                        <div class="searchbox-input date-picker-input">
-                                            <label for="datepicker">When</label>
-                                            <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="main-form-submit">
-                                <button type="submit">Find Now</button>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single date-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-capslock"></i>
+                                    </div>
+                                    <div class="searchbox-input date-picker-input">
+                                        <label for="datepicker">Ngày Đi</label>
+                                        <input placeholder="Hãy chọn ngày đi" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2">
+                        <div class="main-form-submit">
+                            <button type="submit">Tìm Ngay</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -158,7 +148,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
-                        <h5>Adventure</h5>
+                        <h5>Phiêu Lưu</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -166,7 +156,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
-                        <h5>Group Tour</h5>
+                        <h5>Du Lịch</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -174,7 +164,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
-                        <h5>Couple Tour</h5>
+                        <h5>Du Lịch Đôi</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -182,7 +172,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
-                        <h5>Single Tour</h5>
+                        <h5>Du Lịch Đơn Thân</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -190,7 +180,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
-                        <h5>Honeymoon</h5>
+                        <h5>Tuần Trăng Mật</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -198,7 +188,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
-                        <h5>Sea Beach</h5>
+                        <h5>Bãi Biển</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -206,7 +196,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
-                        <h5>Mountain Tour</h5>
+                        <h5>Thám Hiểm Núi</h5>
                     </a>
                 </div>
             </div>
@@ -497,57 +487,18 @@ Suspendisse fringilla.</a></h6>
                         </aside>
                         <aside class="blog-widget widget-tag-cloud mt-30">
                             <div class="widget-title">
-                                <h4>Tags</h4>
+                                <h4>Thẻ</h4>
                             </div>
                             <div class="tag-cloud widget-body">
-                                <a href="#">Adventure</a>
-                                <a href="#">Trip</a>
-                                <a href="#">Guided</a>
-                                <a href="#">Historical</a>
-                                <a href="#">Road Trips</a>
-                                <a href="#">Tourist</a>
-                                <a href="#">Cultural</a>
-                                <a href="#">Natural Tour</a>
-                                <a href="#">Journey</a>
+                                <a href="#">Phiêu Lưu</a>
+                                <a href="#">Chuyến Đi</a>
+ 
+                                <a href="#">Lịch Sử</a>
+                                <a href="#">Chuyến Đi Dài</a>
+                                <a href="#">Du Lịch</a>
                             </div>
                         </aside>
-                        <aside class="blog-widget widget-gallary mt-30">
-                            <div class="widget-title">
-                                <h4>Gallery</h4>
-                            </div>
-                            <ul class=" widget-body">
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-1.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-1.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-2.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-2.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-3.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-3.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-4.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-4.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-5.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-5.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-6.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-6.png" alt="">
-</a>
-                                </li>
-                            </ul>
-                        </aside>
+                       
                     </div>
                 </div>
             </div>
