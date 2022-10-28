@@ -44,102 +44,92 @@
                 </div>
                 <form action="#" method="post" id="main_searchbar">
                     <div class="row g-4">
-                        <div class="col-lg-10">
-                            <div class="row gx-0 gy-4">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single destination-box">
-                                        <div class="searchbox-icon ">
-                                            <i class="bi bi-geo-alt"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="deatination_drop">Destination</label>
-                                            <select data-placeholder="Where Are You Going?" id="deatination_drop">
-<option value="">Where Are You Going?</option>
-<optgroup label="India">
+                    <div class="col-lg-10">
+                        <div class="row gx-0 gy-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single destination-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="deatination_drop">Điểm Đến</label>
+                                        <select data-placeholder="Bạn Muốn Đi Đâu?" id="deatination_drop">
+<option value="">Bạn Muốn Đi Đâu?</option>
+<optgroup label="Việt Nam">
 <option>
-Solt Lake
+TP. Hồ Chí Minh
 </option>
 <option>
-Kolkata
+Vũng Tàu
 </option>
 <option>
-Mohamia
+Phan Thiết
 </option>
 <option>
-Mumbai
+Đà Nẵng
 </option>
 <option>
-New Delhi
-</option>
+Hội An
+ </option>
 </optgroup>
-<optgroup label=" Bangladash">
-<option>
-Cox's Bazer
-</option>
- <option>
-Rangamati
-</option>
-<option>
-Banderban
-</option>
-</optgroup>
+
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-text-paragraph"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="activity-dropdown">Travel Type</label>
-                                            <select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
-<option value="">All Activity</option>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-text-paragraph"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="activity-dropdown">Loại Hình Du Lịch</label>
+                                        <select class="defult-select-drowpown" data-placeholder="Tất Cả Hoạt Động" id="activity-dropdown">
+<option value="">Tất Cả Hoạt Động</option>
 <option value="1">Type 1</option>
 <option value="2">Type 2</option>
 <option value="3">Type 3</option>
 <option value="4">Type 4</option>
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-person-plus"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="person-dropdown">Person</label>
-                                            <select class="defult-select-drowpown" id="person-dropdown">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-person-plus"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="person-dropdown">Số Người</label>
+                                        <select class="defult-select-drowpown" id="person-dropdown">
 <option selected value="0">01</option>
 <option value="1">02</option>
 <option value="2">03</option>
 <option value="3">04</option>
 <option value="4">05</option>
 </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single date-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-capslock"></i>
-                                        </div>
-                                        <div class="searchbox-input date-picker-input">
-                                            <label for="datepicker">When</label>
-                                            <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="main-form-submit">
-                                <button type="submit">Find Now</button>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single date-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-capslock"></i>
+                                    </div>
+                                    <div class="searchbox-input date-picker-input">
+                                        <label for="datepicker">Ngày Đi</label>
+                                        <input placeholder="Hãy chọn ngày đi" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2">
+                        <div class="main-form-submit">
+                            <button type="submit">Tìm Ngay</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -158,7 +148,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
-                        <h5>Adventure</h5>
+                        <h5>Phiêu Lưu</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -166,7 +156,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
-                        <h5>Group Tour</h5>
+                        <h5>Du Lịch</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -174,7 +164,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
-                        <h5>Couple Tour</h5>
+                        <h5>Du Lịch Đôi</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -182,7 +172,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
-                        <h5>Single Tour</h5>
+                        <h5>Du Lịch Đơn Thân</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -190,7 +180,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
-                        <h5>Honeymoon</h5>
+                        <h5>Tuần Trăng Mật</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -198,7 +188,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
-                        <h5>Sea Beach</h5>
+                        <h5>Bãi Biển</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -206,38 +196,8 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
-                        <h5>Mountain Tour</h5>
+                        <h5>Thám Hiểm Núi</h5>
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="topbar-area topbar-style-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 align-items-center d-xl-flex d-none">
-                    <div class="topbar-contact-left">
-                        <ul class="contact-list">
-                            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></li>
-                            <li><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#fc95929a93bc99849d918c9099d29f9391"><span class="__cf_email__" data-cfemail="2f464149406f4a574e425f434a014c4042">[email&#160;protected]</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6 col-md-6 text-xl-center text-md-start text-center">
-                    <div class="topbar-ad">
-                        <a href="#">Black Friday Big Offer</a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 d-md-flex  d-none align-items-center justify-content-end">
-                    <ul class="topbar-social-links">
-                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                        <li><a href="#"><i class="bx bxl-whatsapp-square"></i></a></li>
-                        <li><a href="#"><i class='bx bxl-pinterest'></i></a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -279,15 +239,15 @@ Banderban
                             </div>
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html">Trang Chủ</a>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html">Về Chúng Tôi</a></li>
                                 <li >
-                                    <a href="destination.html">Destination</a>
+                                    <a href="destination.html">Điểm Đến</a>
                                     
                                 </li>
                                 <li >
-                                    <a href="package-sidebar.html">Package</a>
+                                    <a href="package-sidebar.html">Du Lịch</a>
                                 </li>
                                 <li >
                                     <a href="blog-standard.html">Blogs</a>
@@ -297,13 +257,13 @@ Banderban
                                     <a href="javascript:void(0)">Pages</a>
                                     <i class="fl flaticon-plus">+</i>
                                     <ul class="sub-menu">
-                                        <li><a href="guide.html">Guide</a></li>
+                                        <li><a href="guide.html">Hướng Dẫn Viên</a></li>
                                         
-                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="faq.html">Câu Hỏi</a></li>
                                         
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
                             <div class="inner-contact-options d-xl-none">
                                 <div class="contact-box-inner"><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></div>
@@ -332,10 +292,10 @@ Banderban
     <div class="breadcrumb breadcrumb-style-one">
         <div class="container">
             <div class="col-lg-12 text-center">
-                <h2 class="breadcrumb-title">Blog Standard</h2>
+                <h2 class="breadcrumb-title">Blog</h2>
                 <ul class="d-flex justify-content-center breadcrumb-items">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Blog Standard</li>
+                    <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                    <li class="breadcrumb-item active">Blog</li>
                 </ul>
             </div>
         </div>
@@ -356,11 +316,11 @@ Banderban
                         </div>
                         <div class="blog-content">
                             <div class="blog-body-top">
-                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> By John Smith </a>
-                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> Novembar 16, 2021</a>
-                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Comment (08)</a>
+                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> Tác giả: Trần Quốc Bảo </a>
+                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> 26 Tháng 01, 2021</a>
+                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Bình Luận (08)</a>
                             </div>
-                            <h4 class="blog-title"><a href="blog-details.html">Sed nec lacinia sapien. Sed pretium lorem at leo Sed necles lacinia sapien. Sed pretium lorem at leo pellentesque.</a></h4>
+                            <h4 class="blog-title"><a href="blog-details.html">Hà Giang mùa hoa Tam Giác Mạch không thể bỏ lỡ.</a></h4>
                         </div>
                     </div>
                     <div class="blog-card-gamma-full">
@@ -369,16 +329,16 @@ Banderban
 <img src="assets/images/blog/blog-thumb-xl2.png" alt="">
 </a>
                             <div class="blog-lavel">
-                                <a href="#">LifeStyle</a>
+                                <a href="#">Phong cách sống</a>
                             </div>
                         </div>
                         <div class="blog-content">
                             <div class="blog-body-top">
-                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> By John Smith </a>
-                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> Novembar 16, 2021</a>
-                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Comment (08)</a>
+                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> Tác Giả: Nguyễn Bích Ngọc </a>
+                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> 10 Tháng 09, 2021</a>
+                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Bình Luận (08)</a>
                             </div>
-                            <h4 class="blog-title"><a href="blog-details.html">Donec imperdiet est at ultrices sollicitudin urna metus iaculis odio eget efficitur leo eros id lectus.</a></h4>
+                            <h4 class="blog-title"><a href="blog-details.html">5 bãi biển siêu đẹp ở Việt Nam không phải ai cũng biết.</a></h4>
                         </div>
                     </div>
                     <div class="blog-card-gamma-full">
@@ -387,16 +347,16 @@ Banderban
 <img src="assets/images/blog/blog-thumb-xl3.png" alt="">
 </a>
                             <div class="blog-lavel">
-                                <a href="#">Tourist</a>
+                                <a href="#">Du khách</a>
                             </div>
                         </div>
                         <div class="blog-content">
                             <div class="blog-body-top">
-                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> By John Smith </a>
-                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> Novembar 16, 2021</a>
-                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Comment (08)</a>
+                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> Tác Giả: Trần Khánh Vy </a>
+                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> 21 Tháng 07, 2021</a>
+                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Bình Luận (08)</a>
                             </div>
-                            <h4 class="blog-title"><a href="blog-details.html">Mauris vitae nibh nulla. Morbi convallis finibus mi, et tincidunt odio. Donec eu aliquam arcu.</a></h4>
+                            <h4 class="blog-title"><a href="blog-details.html">Kinh nghiệm du lịch đảo Bình Ba.</a></h4>
                         </div>
                     </div>
                     <div class="blog-card-gamma-full">
@@ -410,11 +370,12 @@ Banderban
                         </div>
                         <div class="blog-content">
                             <div class="blog-body-top">
-                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> By John Smith </a>
-                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> Novembar 16, 2021</a>
-                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Comment (08)</a>
+                                <a href="#" class="blog-writer"><i class="bi bi-person-circle"></i> Tác Giả: Nguyễn Bảo Đặng </a>
+                                <a href="#" class="blog-comments"><i class="bi bi-calendar3"></i> 15 Tháng 10, 2021</a>
+                                <a href="#" class="blog-comments"><i class="bi bi-chat-left-quote"></i> Bình Luận (08)</a>
                             </div>
-                            <h4 class="blog-title"><a href="blog-details.html">Fusce tristique placerat arcu, eget interdum lacus suscipit et. Aenean placerat efficitur dignissim.</a></h4>
+                            <h4 class="blog-title"><a href="blog-details.html">
+                                6 bãi biển đẹp nhất Phú Quốc.</a></h4>
                         </div>
                     </div>
                     <div class="row">
@@ -436,48 +397,48 @@ Banderban
                     <div class="blog-sidebar ">
                         <aside class="blog-widget widget-search">
                             <div class="widget-title">
-                                <h4>Search Here</h4>
+                                <h4>Tìm Kiếm</h4>
                             </div>
                             <div class="widget-body">
                                 <form action="#" method="post" id="blog-sidebar-search">
                                     <div class="search-input-group">
-                                        <input type="search" placeholder="Your Destination">
-                                        <button type="submit">SEAECH</button>
+                                        <input type="search" placeholder="Điểm Đến">
+                                        <button type="submit">Tìm</button>
                                     </div>
                                 </form>
                             </div>
                         </aside>
                         <aside class="blog-widget widget-categories mt-30">
                             <div class="widget-title">
-                                <h4>Categories</h4>
+                                <h4>Thể loại</h4>
                             </div>
                             <ul class="widget-body">
                                 <li>
                                     <a href="#">
-                                        <h6><i class="bi bi-chevron-double-right"></i> New York City</h6> <span>(20)</span></a>
+                                        <h6><i class="bi bi-chevron-double-right"></i> Hà Nội</h6> <span>(20)</span></a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <h6><i class="bi bi-chevron-double-right"></i> Adventure Tour</h6> <span>(08)</span></a>
+                                        <h6><i class="bi bi-chevron-double-right"></i> TP. Hồ Chí Minh</h6> <span>(08)</span></a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <h6><i class="bi bi-chevron-double-right"></i> Couple Tour</h6> <span>(18)</span></a>
+                                        <h6><i class="bi bi-chevron-double-right"></i> Đà Nẵng</h6> <span>(18)</span></a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <h6><i class="bi bi-chevron-double-right"></i> Village Tour</h6> <span>(21)</span></a>
+                                        <h6><i class="bi bi-chevron-double-right"></i> Phú Quốc</h6> <span>(21)</span></a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <h6><i class="bi bi-chevron-double-right"></i> Group Tour</h6> <span>(09)</span></a>
+                                        <h6><i class="bi bi-chevron-double-right"></i> Nha Trang</h6> <span>(09)</span></a>
                                 </li>
                             </ul>
                         </aside>
 
                         <aside class="blog-widget widget-recent-entries-custom mt-30">
                             <div class="widget-title">
-                                <h4>New Post</h4>
+                                <h4>Bài Viết Mới</h4>
                             </div>
                             <ul class="widget-body">
                                 <li class="clearfix">
@@ -526,57 +487,18 @@ Suspendisse fringilla.</a></h6>
                         </aside>
                         <aside class="blog-widget widget-tag-cloud mt-30">
                             <div class="widget-title">
-                                <h4>Tags</h4>
+                                <h4>Thẻ</h4>
                             </div>
                             <div class="tag-cloud widget-body">
-                                <a href="#">Adventure</a>
-                                <a href="#">Trip</a>
-                                <a href="#">Guided</a>
-                                <a href="#">Historical</a>
-                                <a href="#">Road Trips</a>
-                                <a href="#">Tourist</a>
-                                <a href="#">Cultural</a>
-                                <a href="#">Natural Tour</a>
-                                <a href="#">Journey</a>
+                                <a href="#">Phiêu Lưu</a>
+                                <a href="#">Chuyến Đi</a>
+ 
+                                <a href="#">Lịch Sử</a>
+                                <a href="#">Chuyến Đi Dài</a>
+                                <a href="#">Du Lịch</a>
                             </div>
                         </aside>
-                        <aside class="blog-widget widget-gallary mt-30">
-                            <div class="widget-title">
-                                <h4>Gallery</h4>
-                            </div>
-                            <ul class=" widget-body">
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-1.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-1.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-2.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-2.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-3.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-3.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-4.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-4.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-5.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-5.png" alt="">
-</a>
-                                </li>
-                                <li>
-                                    <a href="assets/images/gallary/sb-gallary-6.png" data-fancybox="gallery" data-caption="Caption Here" class="gallary-overlay">
-<img src="assets/images/gallary/sb-gallary-6.png" alt="">
-</a>
-                                </li>
-                            </ul>
-                        </aside>
+                       
                     </div>
                 </div>
             </div>
@@ -592,9 +514,9 @@ Suspendisse fringilla.</a></h6>
                 <div class="row justify-content-center g-4">
                     <div class="col-lg-4">
                         <div class="footer-about text-lg-start text-center">
-                            <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula.</p>
+                            <p>Công ty Lữ hành TRAVELLAB là một trong những công ty thương hiệu lữ hành hàng đầu Việt Nam.</p>
                             <div class="footer-social-wrap">
-                                <h5>Follow Us On:</h5>
+                                <h5>Theo dõi chúng tôi tại:</h5>
                                 <ul class="footer-social-links justify-content-lg-start justify-content-center">
                                     <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
                                     <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
@@ -630,38 +552,15 @@ Suspendisse fringilla.</a></h6>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer-widget">
-                            <h4 class="footer-widget-title text-center">Gallery</h4>
-                            <div class="footer-gallary-grid">
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-1.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-1.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-2.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-2.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-3.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-3.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-4.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-4.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-5.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-5.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-6.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-6.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
                 <div class="footer-contact-wrapper">
                     <h5>Contact Us:</h5>
                     <ul class="footer-contact-list">
-                        <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+1 763-227-5032</a></li>
-                        <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#3f565159507f4b504a4d474f4d50115c5052"><span class="__cf_email__" data-cfemail="aac3c4ccc5eadec5dfd8d2dad8c584c9c5c7">[email&#160;protected]</span></a></li>
-                        <li><i class="bi bi-geo-alt"></i> <a href="#">2752 Willison Street Eagan, United State</a></li>
+                        <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+84 123456789</a></li>
+                        <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#f29b9c949db2869d87808a82809ddc919d9f">travellab@gmail.com</a>
+                        </li>
+                        <li><i class="bi bi-geo-alt"></i> <a href="#">123 Đường Linh Trung, Phường Linh Trung, TP Thủ Đức</a></li>
                     </ul>
                 </div>
             </div>

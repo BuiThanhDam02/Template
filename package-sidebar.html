@@ -44,102 +44,92 @@
                 </div>
                 <form action="#" method="post" id="main_searchbar">
                     <div class="row g-4">
-                        <div class="col-lg-10">
-                            <div class="row gx-0 gy-4">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single destination-box">
-                                        <div class="searchbox-icon ">
-                                            <i class="bi bi-geo-alt"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="deatination_drop">Destination</label>
-                                            <select data-placeholder="Where Are You Going?" id="deatination_drop">
-<option value="">Where Are You Going?</option>
-<optgroup label="India">
+                    <div class="col-lg-10">
+                        <div class="row gx-0 gy-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single destination-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="deatination_drop">Điểm Đến</label>
+                                        <select data-placeholder="Bạn Muốn Đi Đâu?" id="deatination_drop">
+<option value="">Bạn Muốn Đi Đâu?</option>
+<optgroup label="Việt Nam">
 <option>
-Solt Lake
+TP. Hồ Chí Minh
 </option>
 <option>
-Kolkata
+Vũng Tàu
 </option>
 <option>
-Mohamia
+Phan Thiết
 </option>
 <option>
-Mumbai
+Đà Nẵng
 </option>
 <option>
-New Delhi
-</option>
+Hội An
+ </option>
 </optgroup>
-<optgroup label=" Bangladash">
-<option>
-Cox's Bazer
-</option>
- <option>
-Rangamati
-</option>
-<option>
-Banderban
-</option>
-</optgroup>
+
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-text-paragraph"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="activity-dropdown">Travel Type</label>
-                                            <select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
-<option value="">All Activity</option>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-text-paragraph"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="activity-dropdown">Loại Hình Du Lịch</label>
+                                        <select class="defult-select-drowpown" data-placeholder="Tất Cả Hoạt Động" id="activity-dropdown">
+<option value="">Tất Cả Hoạt Động</option>
 <option value="1">Type 1</option>
 <option value="2">Type 2</option>
 <option value="3">Type 3</option>
 <option value="4">Type 4</option>
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-person-plus"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="person-dropdown">Person</label>
-                                            <select class="defult-select-drowpown" id="person-dropdown">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-person-plus"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="person-dropdown">Số Người</label>
+                                        <select class="defult-select-drowpown" id="person-dropdown">
 <option selected value="0">01</option>
 <option value="1">02</option>
 <option value="2">03</option>
 <option value="3">04</option>
 <option value="4">05</option>
 </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single date-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-capslock"></i>
-                                        </div>
-                                        <div class="searchbox-input date-picker-input">
-                                            <label for="datepicker">When</label>
-                                            <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="main-form-submit">
-                                <button type="submit">Find Now</button>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single date-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-capslock"></i>
+                                    </div>
+                                    <div class="searchbox-input date-picker-input">
+                                        <label for="datepicker">Ngày Đi</label>
+                                        <input placeholder="Hãy chọn ngày đi" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2">
+                        <div class="main-form-submit">
+                            <button type="submit">Tìm Ngay</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -158,7 +148,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
-                        <h5>Adventure</h5>
+                        <h5>Phiêu Lưu</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -166,7 +156,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
-                        <h5>Group Tour</h5>
+                        <h5>Du Lịch</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -174,7 +164,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
-                        <h5>Couple Tour</h5>
+                        <h5>Du Lịch Đôi</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -182,7 +172,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
-                        <h5>Single Tour</h5>
+                        <h5>Du Lịch Đơn Thân</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -190,7 +180,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
-                        <h5>Honeymoon</h5>
+                        <h5>Tuần Trăng Mật</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -198,7 +188,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
-                        <h5>Sea Beach</h5>
+                        <h5>Bãi Biển</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -206,38 +196,8 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
-                        <h5>Mountain Tour</h5>
+                        <h5>Thám Hiểm Núi</h5>
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="topbar-area topbar-style-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 align-items-center d-xl-flex d-none">
-                    <div class="topbar-contact-left">
-                        <ul class="contact-list">
-                            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></li>
-                            <li><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#a6cfc8c0c9e6c3dec7cbd6cac388c5c9cb"><span class="__cf_email__" data-cfemail="660f08000926031e070b160a034805090b">[email&#160;protected]</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6 col-md-6 text-xl-center text-md-start text-center">
-                    <div class="topbar-ad">
-                        <a href="#">Black Friday Big Offer</a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 d-md-flex  d-none align-items-center justify-content-end">
-                    <ul class="topbar-social-links">
-                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                        <li><a href="#"><i class="bx bxl-whatsapp-square"></i></a></li>
-                        <li><a href="#"><i class='bx bxl-pinterest'></i></a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -279,15 +239,15 @@ Banderban
                             </div>
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html">Trang Chủ</a>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html">Về Chúng Tôi</a></li>
                                 <li >
-                                    <a href="destination.html">Destination</a>
+                                    <a href="destination.html">Điểm Đến</a>
                                     
                                 </li>
                                 <li >
-                                    <a href="package-sidebar.html">Package</a>
+                                    <a href="package-sidebar.html">Du Lịch</a>
                                 </li>
                                 <li >
                                     <a href="blog-standard.html">Blogs</a>
@@ -297,13 +257,13 @@ Banderban
                                     <a href="javascript:void(0)">Pages</a>
                                     <i class="fl flaticon-plus">+</i>
                                     <ul class="sub-menu">
-                                        <li><a href="guide.html">Guide</a></li>
+                                        <li><a href="guide.html">Hướng Dẫn Viên</a></li>
                                         
-                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="faq.html">Câu Hỏi</a></li>
                                         
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
                             <div class="inner-contact-options d-xl-none">
                                 <div class="contact-box-inner"><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></div>
@@ -332,10 +292,10 @@ Banderban
     <div class="breadcrumb breadcrumb-style-one">
         <div class="container">
             <div class="col-lg-12 text-center">
-                <h2 class="breadcrumb-title">Package Sidebar</h2>
+                <h2 class="breadcrumb-title">Du Lịch</h2>
                 <ul class="d-flex justify-content-center breadcrumb-items">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Package Sidebar</li>
+                    <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                    <li class="breadcrumb-item active">Du Lịch</li>
                 </ul>
             </div>
         </div>
@@ -355,15 +315,14 @@ Banderban
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">Etiam placerat dictum consequat an
-Pellentesque habitant morbi.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH MIỀN TRUNG: ĐÀ NẴNG – SƠN TRÀ– HỘI AN – BÀ NÀ</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$91.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>3.990.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -374,19 +333,18 @@ Pellentesque habitant morbi.</a></h3>
                                 <div class="package-thumb">
                                     <a href="package-details.html"><img src="assets/images/package/p-alpha2.png" alt=""></a>
                                     <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>4 Day & 3 night</span>
+                                        <i class="bi bi-clock"></i> <span>3 Day & 2 night</span>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">varius condimentum consequat frin
-Aenean pretium risus eu.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: TÀ ĐÙNG - ĐÀ LẠT</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$91.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>2.490.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -401,15 +359,14 @@ Aenean pretium risus eu.</a></h3>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">Etiam placerat dictum consequat an
-Pellentesque habitant morbi.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH ĐẢO NGỌC PHÚ QUỐC</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$88.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>5.290.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -424,16 +381,15 @@ Pellentesque habitant morbi.</a></h3>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">Aenean auctor porta sodales. nulla
-Suspendisse fringilla neque.
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: BIỂN LONG HẢI
 </a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$67.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>690.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -444,19 +400,18 @@ Suspendisse fringilla neque.
                                 <div class="package-thumb">
                                     <a href="package-details.html"><img src="assets/images/package/p-alpha5.png" alt=""></a>
                                     <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>3 Day & 2 night</span>
+                                        <i class="bi bi-clock"></i> <span>1 Day</span>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">Pellentesque habitant morbi malesua
-tristique senectus et netus et.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: BIỂN BÀ RỊA - VŨNG TÀU</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$67.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>1.890.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -471,14 +426,14 @@ tristique senectus et netus et.</a></h3>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">San Francisco Golden Gate Bridge, cable cars & fog.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: NINH THUẬN - NINH CHỮ - VĨNH HY</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$91.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>2.690.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -493,15 +448,14 @@ tristique senectus et netus et.</a></h3>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">Etiam placerat dictum consequat an
-Pellentesque habitant morbi.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH PHAN THIẾT</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$79.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>1.890.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -512,19 +466,18 @@ Pellentesque habitant morbi.</a></h3>
                                 <div class="package-thumb">
                                     <a href="package-details.html"><img src="assets/images/package/p-alpha2.png" alt=""></a>
                                     <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>3 Day & 2 night</span>
+                                        <i class="bi bi-clock"></i> <span>2 Day & 1 night</span>
                                     </p>
                                 </div>
                                 <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">varius condimentum consequat frin
-Aenean pretium risus eu.</a></h3>
+                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: ĐẢO BÌNH BA - CAM RANH</a></h3>
                                     <div class="p-card-bottom">
                                         <div class="book-btn">
-                                            <a href="package-details.html">Book Now <i class='bx bxs-right-arrow-alt'></i></a>
+                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
                                         </div>
                                         <div class="p-card-info">
-                                            <span>From</span>
-                                            <h6>$88.00 <span>Per Person</span></h6>
+                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
+                                            <h6>1.490.000 ₫ <span>1 Người</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -534,7 +487,7 @@ Aenean pretium risus eu.</a></h3>
                     <div class="row">
                         <div class="col-lg-12">
                             <nav>
-                                <ul class="pagination pagination-style-one justify-content-center pt-80">
+                                <ul id="pagination-demo" class="pagination pagination-style-one justify-content-center pt-80">
                                     <li class="page-item page-arrow"><a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a></li>
                                     <li class="page-item active"><a class="page-link" href="#">01</a></li>
                                     <li class="page-item"><a class="page-link" href="#">02</a></li>
@@ -550,50 +503,63 @@ Aenean pretium risus eu.</a></h3>
                     <div class="package-sidebar">
                         <aside class="package-widget widget-search">
                             <div class="widget-title">
-                                <h4>Search Here</h4>
+                                <h4>Tìm kiếm</h4>
                             </div>
                             <div class="widget-body">
                                 <form action="#" method="post" id="blog-sidebar-search">
                                     <div class="search-input-group">
-                                        <input type="search" placeholder="Your Destination">
-                                        <button type="submit">SEAECH</button>
+                                        <input type="search" placeholder="Tìm Kiếm">
+                                        
+                                        <button type="submit">Tìm</button>
                                     </div>
                                 </form>
                             </div>
                         </aside>
                         <aside class="package-widget widget-tour-categoris mt-30">
                             <div class="widget-title">
-                                <h4>Category</h4>
+                                <h4>Phân loại</h4>
                             </div>
                             <div class="widget-body">
                                 <ul>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate">
-<i class="bi bi-chevron-double-right"></i> New York City
+<i class="bi bi-chevron-double-right"></i> Phiêu Lưu
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate2">
-<i class="bi bi-chevron-double-right"></i>Adventure Tour
+<i class="bi bi-chevron-double-right"></i>Du Lịch
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate2">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate3">
- <i class="bi bi-chevron-double-right"></i> Couple Tour
+ <i class="bi bi-chevron-double-right"></i> Du Lịch Đôi
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate3">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate4">
-<i class="bi bi-chevron-double-right"></i> Village Tour
+<i class="bi bi-chevron-double-right"></i> Du Lịch Đơn Thân
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate4">
                                     </li>
                                     <li class="category-check">
                                         <label class="form-check-label" for="cate5">
-<i class="bi bi-chevron-double-right"></i>Group Tour
+<i class="bi bi-chevron-double-right"></i>Tuần Trăng Mật
+</label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+<i class="bi bi-chevron-double-right"></i>Bãi Biển
+</label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+<i class="bi bi-chevron-double-right"></i>Thám Hiểm Núi
 </label>
                                         <input class="form-check-input" type="checkbox" id="cate5">
                                     </li>
@@ -602,7 +568,7 @@ Aenean pretium risus eu.</a></h3>
                         </aside>
                         <aside class="package-widget widget-duration mt-30">
                             <div class="widget-title">
-                                <h4>Chooes Your Duration</h4>
+                                <h4>Thời gian</h4>
                             </div>
                             <div class="widget-body">
                                 <ul>
@@ -639,9 +605,101 @@ Aenean pretium risus eu.</a></h3>
                                 </ul>
                             </div>
                         </aside>
+                        <aside class="package-widget widget-tour-categoris mt-30">
+                            <div class="widget-title">
+                                <h4>Mức giá</h4>
+                            </div>
+                            <div class="widget-body">
+                                <ul>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Dưới 5 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 5 triệu tới 10 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 10 triệu tới 15 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 15 triệu tới 20 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Từ 20 triệu tới 30 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                    <li class="category-check">
+                                        <label class="form-check-label" for="cate5">
+                                        <i class="bi bi-chevron-double-right"></i>Trên 30 triệu
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="cate5">
+                                    </li>
+                                </ul>
+                                
+                                   
+                            </div>
+                        </aside>
+                        <aside class="package-widget widget-duration mt-30">
+                            <div class="widget-title">
+                                <h4>Số lượng</h4>
+                            </div>
+                            <div class="widget-body">
+                                <ul>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura1">
+                                        <label class="form-check-label" for="dura1">
+1 Người
+</label>
+                                    </li>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura2">
+                                        <label class="form-check-label" for="dura2">
+2-3 Người
+</label>
+                                    </li>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura3">
+                                        <label class="form-check-label" for="dura3">
+4-5 Người
+</label>
+                                    </li>
+                                    <li class="deration-check">
+                                        <input class="form-check-input" type="checkbox" id="dura4">
+                                        <label class="form-check-label" for="dura4">
+Trên 5 Người
+</label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </aside>
                         <aside class="package-widget widget-recent-package-entries mt-30">
                             <div class="widget-title">
-                                <h4>New Package</h4>
+                                <h4>Ngày đi</h4>
+                            </div>
+                            <div class="widget-body">
+                                <div class="search-input-group">
+                                    <input type="date">
+                                    
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="package-widget widget-recent-package-entries mt-30">
+                            <div class="widget-title">
+                                <h4>Gói Du Lịch Mới</h4>
                             </div>
                             <div class="widget-body">
                                 <ul>
@@ -652,10 +710,10 @@ Aenean pretium risus eu.</a></h3>
 </a>
                                         </div>
                                         <div class="info">
-                                            <h6><a href="package-details.html">San Francisco Golden Gate Bridge, cable cars & fog</a></h6>
+                                            <h6><a href="package-details.html">DU LỊCH TÂY BẮC: NGHĨA LỘ - TÚ LỆ - MÙ CANG CHẢI - SAPA</a></h6>
                                             <div class="price">
-                                                <span>From</span>
-                                                <h6>$70.00 <span>Per Person</span></h6>
+                                                <span>Chỉ Từ</span>
+                                                <h6>5.990.000 ₫ <span>1 Người</span></h6>
                                             </div>
                                         </div>
                                     </li>
@@ -666,11 +724,10 @@ Aenean pretium risus eu.</a></h3>
 </a>
                                         </div>
                                         <div class="info">
-                                            <h6><a href="package-details.html">Praesent porttitor tellus sed ande
-ultrices pulvinar magna mauris.</a></h6>
+                                            <h6><a href="package-details.html">DU LỊCH ĐÔNG BẮC - TÂY BẮC: HÀ NỘI - TRÀNG AN - BÁI ĐÍNH - HẠ LONG - KDL YÊN TỬ - SAPA </a></h6>
                                             <div class="price">
-                                                <span>From</span>
-                                                <h6>$77.00 <span>Per Person</span></h6>
+                                                <span>Chỉ Từ</span>
+                                                <h6>7.990.000 ₫ <span>1 Người</span></h6>
                                             </div>
                                         </div>
                                     </li>
@@ -681,11 +738,10 @@ ultrices pulvinar magna mauris.</a></h6>
 </a>
                                         </div>
                                         <div class="info">
-                                            <h6><a href="package-details.html">Vestibulum luctus hendrerit vitae
-neque, et blandit orci tincidunt.</a></h6>
+                                            <h6><a href="package-details.html">DU LỊCH ĐẢO BÌNH HƯNG</a></h6>
                                             <div class="price">
-                                                <span>From</span>
-                                                <h6>$95.00 <span>Per Person</span></h6>
+                                                <span>Chỉ Từ</span>
+                                                <h6>1.490.000 ₫ <span>1 Người</span></h6>
                                             </div>
                                         </div>
                                     </li>
@@ -696,21 +752,18 @@ neque, et blandit orci tincidunt.</a></h6>
 </a>
                                         </div>
                                         <div class="info">
-                                            <h6><a href="package-details.html">San Francisco Golden Gate Bridge, cable cars & fog</a></h6>
+                                            <h6><a href="package-details.html">DU LỊCH: KHÁM PHÁ QUẦN ĐẢO NAM DU</a></h6>
                                             <div class="price">
-                                                <span>From</span>
-                                                <h6>$88.00 <span>Per Person</span></h6>
+                                                <span>Chỉ Từ</span>
+                                                <h6>2.190.000 ₫ <span>1 Người</span></h6>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </aside>
-                        <aside class="widget-banner mt-30">
-                            <a href="#">
-<img src="assets/images/banner/sidebar-banner.png" alt="" class="img-fluid">
-</a>
-                        </aside>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -726,9 +779,9 @@ neque, et blandit orci tincidunt.</a></h6>
                 <div class="row justify-content-center g-4">
                     <div class="col-lg-4">
                         <div class="footer-about text-lg-start text-center">
-                            <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula.</p>
+                            <p>Công ty Lữ hành TRAVELLAB là một trong những công ty thương hiệu lữ hành hàng đầu Việt Nam.</p>
                             <div class="footer-social-wrap">
-                                <h5>Follow Us On:</h5>
+                                <h5>Theo dõi chúng tôi tại:</h5>
                                 <ul class="footer-social-links justify-content-lg-start justify-content-center">
                                     <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
                                     <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
@@ -764,38 +817,15 @@ neque, et blandit orci tincidunt.</a></h6>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer-widget">
-                            <h4 class="footer-widget-title text-center">Gallery</h4>
-                            <div class="footer-gallary-grid">
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-1.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-1.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-2.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-2.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-3.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-3.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-4.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-4.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-5.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-5.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-6.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-6.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
                 <div class="footer-contact-wrapper">
                     <h5>Contact Us:</h5>
                     <ul class="footer-contact-list">
-                        <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+1 763-227-5032</a></li>
-                        <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#adc4c3cbc2edd9c2d8dfd5dddfc283cec2c0"><span class="__cf_email__" data-cfemail="4c25222a230c3823393e343c3e23622f2321">[email&#160;protected]</span></a></li>
-                        <li><i class="bi bi-geo-alt"></i> <a href="#">2752 Willison Street Eagan, United State</a></li>
+                        <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+84 123456789</a></li>
+                        <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#f29b9c949db2869d87808a82809ddc919d9f">travellab@gmail.com</a>
+                        </li>
+                        <li><i class="bi bi-geo-alt"></i> <a href="#">123 Đường Linh Trung, Phường Linh Trung, TP Thủ Đức</a></li>
                     </ul>
                 </div>
             </div>
@@ -838,6 +868,7 @@ neque, et blandit orci tincidunt.</a></h6>
     <script src="assets/js/jquery-ui.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/paginationJQUERY.js"></script>
 </body>
 
 </html>
