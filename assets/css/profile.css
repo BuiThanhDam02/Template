@@ -1,0 +1,73 @@
+.profile{
+    width: 1600px;
+}
+
+.btn-hidden{
+    display: none;
+}
+
+.ps-md-4{
+    margin-left: 40px;
+    width: 950px;
+    border: 1px solid #cad2c5;
+    border-radius: 10px;
+}
+
+.toggle-edit-form{
+    color: var(--c-primary);
+}
+
+.toggle-edit-form:hover{
+    color: #8d99ae;
+}
+
+.d-inline-flex{
+    font-size: 20px;
+    color: #264653;
+}
+
+.d-inline-flex:hover{
+    color: var(--c-primary);
+}
+
+.list-unstyled{
+    padding-left: 20px;
+}
+
+.list-unstyled a{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.heading h5{
+    font-size: 24px;
+}
+
+.heading p{
+    font-size: 18px;
+}
+
+
+.row{
+    font-size: 16px;
+}
+
+.setting-label{
+    font-weight: 600;
+}
+
+.box-items-left{
+    border: 1px solid #cad2c5;
+    border-radius: 10px;
+}
+
+.miss-pass{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-item .nav-link{
+    color: #264653;
+    font-weight: 600;
+
+}

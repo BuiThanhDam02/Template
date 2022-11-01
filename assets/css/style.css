@@ -670,7 +670,7 @@ table tfoot tr th {
 }
 
 .button-fill-primary:hover {
-    background: 0 0;
+    background: #e5e5e5;
     color: var(--c-primary)
 }
 
@@ -8005,3 +8005,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .about_h5_box3{
     margin-left: 40px;
 }
+
+
+
+

@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TourX Pro - Travels Tourism Agency HTML Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+    <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <div class="main-searchbar-wrapper">
+        <div class="container">
+            <div class="multi-main-searchber">
+                <div class="main-searchbar-close search-toggle">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <form action="#" method="post" id="main_searchbar">
+                    <div class="row g-4">
+                        <div class="col-lg-10">
+                            <div class="row gx-0 gy-4">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="search-box-single destination-box">
+                                        <div class="searchbox-icon ">
+                                            <i class="bi bi-geo-alt"></i>
+                                        </div>
+                                        <div class="searchbox-input">
+                                            <label for="deatination_drop">Destination</label>
+                                            <select data-placeholder="Where Are You Going?" id="deatination_drop">
+<option value="">Where Are You Going?</option>
+<optgroup label="India">
+<option>
+Solt Lake
+</option>
+<option>
+Kolkata
+</option>
+<option>
+Mohamia
+</option>
+<option>
+Mumbai
+</option>
+<option>
+New Delhi
+</option>
+</optgroup>
+<optgroup label=" Bangladash">
+<option>
+Cox's Bazer
+</option>
+ <option>
+Rangamati
+</option>
+<option>
+Banderban
+</option>
+</optgroup>
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="search-box-single type-box">
+                                        <div class="searchbox-icon">
+                                            <i class="bi bi-text-paragraph"></i>
+                                        </div>
+                                        <div class="searchbox-input">
+                                            <label for="activity-dropdown">Travel Type</label>
+                                            <select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
+<option value="">All Activity</option>
+<option value="1">Type 1</option>
+<option value="2">Type 2</option>
+<option value="3">Type 3</option>
+<option value="4">Type 4</option>
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="search-box-single type-box">
+                                        <div class="searchbox-icon">
+                                            <i class="bi bi-person-plus"></i>
+                                        </div>
+                                        <div class="searchbox-input">
+                                            <label for="person-dropdown">Person</label>
+                                            <select class="defult-select-drowpown" id="person-dropdown">
+<option selected value="0">01</option>
+<option value="1">02</option>
+<option value="2">03</option>
+<option value="3">04</option>
+<option value="4">05</option>
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="search-box-single date-box">
+                                        <div class="searchbox-icon">
+                                            <i class="bi bi-capslock"></i>
+                                        </div>
+                                        <div class="searchbox-input date-picker-input">
+                                            <label for="datepicker">When</label>
+                                            <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="main-form-submit">
+                                <button type="submit">Find Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="category-sidebar-wrapper">
+        <div class="category-sidebar">
+            <div class="category-header d-flex justify-content-between align-items-center">
+                <h4>Category</h4>
+                <div class="category-toggle">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+            <div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate1.svg" alt="">
+                        </div>
+                        <h5>Adventure</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate2.svg" alt="">
+                        </div>
+                        <h5>Group Tour</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate3.svg" alt="">
+                        </div>
+                        <h5>Couple Tour</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate4.svg" alt="">
+                        </div>
+                        <h5>Single Tour</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate5.svg" alt="">
+                        </div>
+                        <h5>Honeymoon</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate6.svg" alt="">
+                        </div>
+                        <h5>Sea Beach</h5>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="category-box" href="package.html">
+                        <div class="cate-icon mx-auto">
+                            <img src="assets/images/icons/cate7.svg" alt="">
+                        </div>
+                        <h5>Mountain Tour</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+      <div class="header-area header-style-one">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
+                      <div class="nav-logo d-flex justify-content-between align-items-center">
+                          <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                          <div class="d-flex align-items-center gap-4">
+                              <div class="nav-right d-xl-none">
+                                  <ul class="nav-actions">
+                                      <li class="category-toggle">
+                                          <i class='bx bx-category'></i>
+                                      </li>
+                                      <li class="search-toggle">
+                                          <i class='bx bx-search-alt'></i>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="mobile-menu d-flex ">
+                                  <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+<span class="h-top"></span>
+<span class="h-middle"></span>
+<span class="h-bottom"></span>
+</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                      <nav class="main-nav float-end">
+                          <div class="inner-logo d-xl-none text-center">
+                              <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                          </div>
+                          <ul>
+                              <li>
+                                  <a href="index.html">Trang Chủ</a>
+                              </li>
+                              <li><a href="about.html">Về Chúng Tôi</a></li>
+                              <li >
+                                  <a href="destination.html">Điểm Đến</a>
+                                  
+                              </li>
+                              <li >
+                                  <a href="package-sidebar.html">Du Lịch</a>
+                              </li>
+                              <li >
+                                  <a href="blog-standard.html">Blogs</a>
+                              
+                              </li>
+                              <li class="has-child-menu">
+                                  <a href="javascript:void(0)">Pages</a>
+                                  <i class="fl flaticon-plus">+</i>
+                                  <ul class="sub-menu">
+                                      <li><a href="guide.html">Hướng Dẫn Viên</a></li>
+                                      
+                                      <li><a href="faq.html">Câu Hỏi</a></li>
+                                      
+                                  </ul>
+                              </li>
+                              <li><a href="contact.html">Liên Hệ</a></li>
+                          </ul>
+                          <div class="inner-contact-options d-xl-none">
+                              <div class="contact-box-inner"><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></div>
+                              <div class="contact-box-inner"><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#4b22252d240b2e332a263b272e65282426"><span class="__cf_email__" data-cfemail="dcb5b2bab39cb9a4bdb1acb0b9f2bfb3b1">[email&#160;protected]</span></a></div>
+                          </div>
+                      </nav>
+                  </div>
+                  <div class="col-xl-2">
+                      <div class="nav-right float-end d-xl-flex d-none ">
+                          <ul class="nav-actions">
+                              <li class="category-toggle">
+                                  <i class='bx bx-category'></i>
+                              </li>
+                              <li class="search-toggle">
+                                  <i class='bx bx-search-alt'></i>
+                              </li>
+                              <li class="profile-toggle">
+                                  <a href="./sign.html"><i class='bx bx-category'></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    <div class="profile-wrapper">
+        <main role="main">
+            <main role="main">
+                <div class="profile">
+                    <div class="container">
+                        <div class="row py-4">
+    
+                            <div class="col-md-3 col-12 left box-items-left">
+                                <div class="wrapper p-4 box-items">
+                                  <div class="info d-flex align-items-center mb-md-3">
+                                    <div class="image me-3">
+                                      <a href="#">
+                                        <img
+                                          src="https://lh3.googleusercontent.com/a/ALm5wu2avfGVm5jBptugPFvfuTjKlhDKkmMXQTUoqHNO=s96-c"
+                                          class="rounded-circle"
+                                        />
+                                      </a>
+                                    </div>
+                                    <div class="info-wrapper">
+                                      <div>
+                                        <h5 class="fw-bold">Nguyễn Văn A</h5>
+                                        <small
+                                          ><a
+                                            href="/cdn-cgi/l/email-protection"
+                                            class="__cf_email__"
+                                            data-cfemail="83ede4f6fae6edebf4e7e2f7b2bab2b1c3e4eee2eaefade0ecee"
+                                            >[email&#160;protected]</a
+                                          ></small
+                                        >
+                                      </div>
+                                      <span id="toggle-profile-menu" class="d-lg-none">
+                                        <i class="icon icon--chevron-down"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <nav class="profile-links py-3">
+                                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                                      <li class="mb-1">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded collapsed"
+                                          data-bs-toggle="collapse"
+                                          data-bs-target="#getting-started-collapse"
+                                          aria-expanded="false"
+                                        >
+                                          <h6 class="fw-bold">Tài khoản</h6>
+                                        </a>
+                                        <div
+                                          class="collapse show"
+                                          id="getting-started-collapse"
+                                        >
+                                          <ul class="list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                              <a
+                                                href="profile.html"
+                                                class="d-inline-flex align-items-center rounded active"
+                                              >
+                                                Thông tin cá nhân
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a
+                                                href="ChangePassword.html"
+                                                class="d-inline-flex align-items-center rounded"
+                                              >
+                                                Đổi mật khẩu
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a
+                                                href="PaymentInfo.html"
+                                                class="d-inline-flex align-items-center rounded"
+                                              >
+                                                Thông tin thanh toán
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a
+                                                href="#"
+                                                onclick="LogoutAccount();"
+                                                class="d-inline-flex align-items-center rounded"
+                                              >
+                                                Đăng xuất
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a
+                                                href="#"
+                                                id="deleteAccount"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#deleteAccountModal"
+                                                class="d-inline-flex align-items-center rounded"
+                                              >
+                                                Yêu cầu xóa tài khoản
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="mb-1">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded"
+                                          href="Order.html"
+                                        >
+                                          <h6 class="fw-bold">Đơn đặt chỗ</h6>
+                                        </a>
+                                      </li>
+                                      <li class="mb-1">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded"
+                                          href="#"
+                                        >
+                                          <h6 class="fw-bold">Đánh giá của Quý khách</h6>
+                                        </a>
+                                      </li>
+                                      <li class="mb-1">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded"
+                                          href="Saved.html"
+                                        >
+                                          <h6 class="fw-bold">Yêu thích đã lưu</h6>
+                                        </a>
+                                      </li>
+                                      <li class="mb-1 d-none">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded"
+                                          href="Compared.html"
+                                        >
+                                          <h6 class="fw-bold">Sản phẩm đã so sánh</h6>
+                                        </a>
+                                      </li>
+                                      <li class="mb-1 d-none">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded"
+                                          href="Voucher.html"
+                                        >
+                                          <h6 class="fw-bold">
+                                            Voucher khuyến mãi của Quý khách
+                                          </h6>
+                                        </a>
+                                      </li>
+                                      <li class="mb-1 d-none">
+                                        <a
+                                          class="d-inline-flex align-items-center rounded"
+                                          href="Promotion.html"
+                                        >
+                                          <h6 class="fw-bold">Chương trình ưu đãi cho user</h6>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                              </div>
+                            <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">GỬI YÊU CẦU XÓA TÀI KHOẢN</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <label for="name" class="form-label">Lý do<span class="required-star">*</span></label>
+                                                    <input type="text" class="form-control" id="ReasonName" placeholder="Lý do" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" id="btnSendRequest" class="btn btn-primary">Gửi đi</button>
+                                        </div>
+                                    </div>
+                                    }
+                                </div>
+                            </div>
+                            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                            <script>
+                                function LogoutAccount() {
+                                    if (!confirm("Xác nhận đăng xuất?")) {
+                                        return false;
+                                    }
+                                    //Logout action
+                                    $.ajax({
+                                        url: '/AccountMember/LogoutAccount',
+                                        type: 'POST',
+                                        contentType: 'json',
+                                        data: {},
+                                        success: function(result) {
+                                            if (result.length > 0) {
+                                                alert(result);
+                                                location.href = '/AccountMember/Login';
+                                            }
+                                        },
+                                        error: function() {
+                                            alert("Không thực hiện được");
+                                        }
+    
+                                    })
+                                };
+    
+                                var myModal = new bootstrap.Modal(document.getElementById('deleteAccountModal'), {
+                                    keyboard: false
+                                })
+    
+                                $("#deleteAccount").click(function() {
+                                    event.preventDefault();
+                                    myModal.show();
+                                });
+    
+                                $("#btnSendRequest").click(function() {
+                                    event.preventDefault();
+                                    var ReasonName = $("#ReasonName").val();
+                                    if (ReasonName === "") {
+                                        alert("Vui lòng nhập lý do");
+                                    } else {
+                                        $.ajax({
+                                            url: '/Profile/DeleteAccount',
+                                            type: 'GET',
+                                            /*contentType: 'json',*/
+                                            data: {
+                                                Reason: ReasonName
+                                            },
+                                            success: function(result) {
+                                                if (result.length > 0) {
+                                                    alert(result);
+                                                    location.href = '/AccountMember/Login';
+                                                } else {
+                                                    alert("Xóa tài khoản không thành công");
+                                                }
+                                            },
+                                            error: function() {
+                                                alert("Không thực hiện được");
+                                            }
+    
+                                        })
+                                    }
+                                });
+                            </script>
+    
+    
+                            <div class="col-md-9 col-12 right ps-md-4">
+                                <div class="wrapper saved">
+                                    <div class="tab">
+                                        <ul class="nav py-3 tab flex-sm-row mb-3" role="tablist">
+                                            <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" value="1" aria-selected="true">Tour du lịch</a>
+                                            </li>
+                                            <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" value="2" aria-controls="pills-profile" aria-selected="false">Vé MB + KS</a>
+                                            </li>
+                                            <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" value="3" aria-controls="pills-contact" aria-selected="false">Xe + KS</a>
+                                            </li>
+                                            <li class="nav-item flex-sm-fill text-sm-center" role="presentation">
+                                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" value="4" aria-controls="pills-contact" aria-selected="false">Khách sạn</a>
+                                            </li>
+                                        </ul>
+                                        <div class="form-search mb-4">
+                                            <form action="#" method="get">
+                                                <input class="form-control px-5" type="text" placeholder="Tìm kiếm theo tên tour/ khách sạn/ vé máy bay/ xe hoặc mã code" aria-label="default input example" />
+                                                <i class="icon icon--search"></i>
+                                            </form>
+                                        </div>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane result fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                <div class="row g-3 g-lg-4" id="divTourLikeAccount">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </main>
+        </main>
+    </div>
+
+    <div class="footer-area mt-110">
+      <div class="footer-main-wrapper">
+          <div class="footer-vactor">
+              <img src="assets/images/banner/footer-bg.png" alt="">
+          </div>
+          <div class="container">
+              <div class="row justify-content-center g-4">
+                  <div class="col-lg-4">
+                      <div class="footer-about text-lg-start text-center">
+                          <p>Công ty Lữ hành TRAVELLAB là một trong những công ty thương hiệu lữ hành hàng đầu Việt Nam.</p>
+                          <div class="footer-social-wrap">
+                              <h5>Theo dõi chúng tôi tại:</h5>
+                              <ul class="footer-social-links justify-content-lg-start justify-content-center">
+                                  <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                                  <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                                  <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                                  <li><a href="#"><i class="bx bxl-whatsapp"></i></a></li>
+                                  <li><a href="#"><i class='bx bxl-pinterest-alt'></i></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4">
+                      <div class="footer-widget">
+                          <h4 class="footer-widget-title">Quick Link</h4>
+                          <ul class="footer-links">
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="package.html">Tour Package</a></li>
+                              <li><a href="destination.html">Destination</a></li>
+                              <li><a href="guide.html">Tour Guide</a></li>
+                              <li><a href="package-details.html">Booking Process</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4">
+                      <div class="footer-widget">
+                          <h4 class="footer-widget-title">Tour Type</h4>
+                          <ul class="footer-links">
+                              <li><a href="#">Wild & Adventure Tours</a></li>
+                              <li><a href="#">Group Tour</a></li>
+                              <li><a href="#">Seasonal Tours</a></li>
+                              <li><a href="#">Relaxation Tours</a></li>
+                              <li><a href="#">Family Friendly Tours</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              
+              </div>
+              <div class="footer-contact-wrapper">
+                  <h5>Contact Us:</h5>
+                  <ul class="footer-contact-list">
+                      <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+84 123456789</a></li>
+                      <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#f29b9c949db2869d87808a82809ddc919d9f">travellab@gmail.com</a>
+                      </li>
+                      <li><i class="bi bi-geo-alt"></i> <a href="#">123 Đường Linh Trung, Phường Linh Trung, TP Thủ Đức</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="container">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-lg-4 col-md-6 order-lg-1 order-3 ">
+                      <div class="copyright-link text-lg-start text-center">
+                          <p>Copyright 2021 TourXPro | Design By <a href="#"> Egens Lab</a></p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4  order-lg-2 order-1">
+                      <div class="footer-logo text-center">
+                          <a href="index.html"><img src="assets/images/logo-w.png" alt=""></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 order-lg-3 order-2">
+                      <div class="policy-links">
+                          <ul class="policy-list justify-content-lg-end justify-content-center">
+                              <li><a href="#">Terms & Condition</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/chain_fade.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>
