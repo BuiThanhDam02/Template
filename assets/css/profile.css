@@ -12,6 +12,18 @@
     border: 1px solid #cad2c5;
     border-radius: 10px;
 }
+.profile{
+    width: 100%;
+}
+.container_profile{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.content{
+    display: flex;
+
+}
 
 .toggle-edit-form{
     color: var(--c-primary);
