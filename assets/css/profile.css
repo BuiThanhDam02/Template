@@ -1,5 +1,6 @@
 .profile{
     width: 1600px;
+    width: 100%;
 }
 
 .btn-hidden{
@@ -8,9 +9,19 @@
 
 .ps-md-4{
     margin-left: 40px;
-    width: 950px;
+    width: 920px;
     border: 1px solid #cad2c5;
     border-radius: 10px;
+}
+
+.container_profile{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.content{
+    display: flex;
+    width: 100%;
 }
 
 .toggle-edit-form{
@@ -19,6 +30,7 @@
 
 .toggle-edit-form:hover{
     color: #8d99ae;
+    cursor: pointer;
 }
 
 .d-inline-flex{
@@ -69,5 +81,28 @@
 .nav-item .nav-link{
     color: #264653;
     font-weight: 600;
+}
 
+.form-control{
+    width: 200px;
+}
+
+.text-end{
+    margin-top: 40px;
+}
+
+.text-end button{
+    background-color: var(--c-primary);
+    border: 1px solid var(--c-primary);
+}
+
+.text-end button:hover{
+    background-color: #565E64;
+}
+
+.setting-item{
+    width: 840px;
+    border-top: 1px solid #DEE2E6;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

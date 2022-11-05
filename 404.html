@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>TourX Pro - Travels Tourism Agency HTML Template</title>
+    <title>TraveLab - Khám phá đất nước của chúng ta</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+    <link rel="icon" href="assets/images/title.png" type="image/gif" sizes="20x20">
 
     <link rel="stylesheet" href="assets/css/select2.min.css">
 
@@ -44,102 +44,92 @@
                 </div>
                 <form action="#" method="post" id="main_searchbar">
                     <div class="row g-4">
-                        <div class="col-lg-10">
-                            <div class="row gx-0 gy-4">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single destination-box">
-                                        <div class="searchbox-icon ">
-                                            <i class="bi bi-geo-alt"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="deatination_drop">Destination</label>
-                                            <select data-placeholder="Where Are You Going?" id="deatination_drop">
-<option value="">Where Are You Going?</option>
-<optgroup label="India">
+                    <div class="col-lg-10">
+                        <div class="row gx-0 gy-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single destination-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="deatination_drop">Điểm Đến</label>
+                                        <select data-placeholder="Bạn Muốn Đi Đâu?" id="deatination_drop">
+<option value="">Bạn Muốn Đi Đâu?</option>
+<optgroup label="Việt Nam">
 <option>
-Solt Lake
+TP. Hồ Chí Minh
 </option>
 <option>
-Kolkata
+Vũng Tàu
 </option>
 <option>
-Mohamia
+Phan Thiết
 </option>
 <option>
-Mumbai
+Đà Nẵng
 </option>
 <option>
-New Delhi
-</option>
+Hội An
+ </option>
 </optgroup>
-<optgroup label=" Bangladash">
-<option>
-Cox's Bazer
-</option>
- <option>
-Rangamati
-</option>
-<option>
-Banderban
-</option>
-</optgroup>
+
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-text-paragraph"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="activity-dropdown">Travel Type</label>
-                                            <select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
-<option value="">All Activity</option>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-text-paragraph"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="activity-dropdown">Loại Hình Du Lịch</label>
+                                        <select class="defult-select-drowpown" data-placeholder="Tất Cả Hoạt Động" id="activity-dropdown">
+<option value="">Tất Cả Hoạt Động</option>
 <option value="1">Type 1</option>
 <option value="2">Type 2</option>
 <option value="3">Type 3</option>
 <option value="4">Type 4</option>
 </select>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single type-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-person-plus"></i>
-                                        </div>
-                                        <div class="searchbox-input">
-                                            <label for="person-dropdown">Person</label>
-                                            <select class="defult-select-drowpown" id="person-dropdown">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single type-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-person-plus"></i>
+                                    </div>
+                                    <div class="searchbox-input">
+                                        <label for="person-dropdown">Số Người</label>
+                                        <select class="defult-select-drowpown" id="person-dropdown">
 <option selected value="0">01</option>
 <option value="1">02</option>
 <option value="2">03</option>
 <option value="3">04</option>
 <option value="4">05</option>
 </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="search-box-single date-box">
-                                        <div class="searchbox-icon">
-                                            <i class="bi bi-capslock"></i>
-                                        </div>
-                                        <div class="searchbox-input date-picker-input">
-                                            <label for="datepicker">When</label>
-                                            <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="main-form-submit">
-                                <button type="submit">Find Now</button>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="search-box-single date-box">
+                                    <div class="searchbox-icon">
+                                        <i class="bi bi-capslock"></i>
+                                    </div>
+                                    <div class="searchbox-input date-picker-input">
+                                        <label for="datepicker">Ngày Đi</label>
+                                        <input placeholder="Hãy chọn ngày đi" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-2">
+                        <div class="main-form-submit">
+                            <button type="submit">Tìm Ngay</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -158,7 +148,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
-                        <h5>Adventure</h5>
+                        <h5>Phiêu Lưu</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -166,7 +156,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
-                        <h5>Group Tour</h5>
+                        <h5>Du Lịch</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -174,7 +164,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
-                        <h5>Couple Tour</h5>
+                        <h5>Du Lịch Đôi</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -182,7 +172,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
-                        <h5>Single Tour</h5>
+                        <h5>Du Lịch Đơn Thân</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -190,7 +180,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
-                        <h5>Honeymoon</h5>
+                        <h5>Tuần Trăng Mật</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -198,7 +188,7 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
-                        <h5>Sea Beach</h5>
+                        <h5>Bãi Biển</h5>
                     </a>
                 </div>
                 <div class="col">
@@ -206,13 +196,12 @@ Banderban
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
-                        <h5>Mountain Tour</h5>
+                        <h5>Thám Hiểm Núi</h5>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
 
     <header>
         <div class="header-area header-style-one">
@@ -249,15 +238,15 @@ Banderban
                             </div>
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html">Trang Chủ</a>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html">Về Chúng Tôi</a></li>
                                 <li >
-                                    <a href="destination.html">Destination</a>
+                                    <a href="destination.html">Điểm Đến</a>
                                     
                                 </li>
                                 <li >
-                                    <a href="package-sidebar.html">Package</a>
+                                    <a href="package-sidebar.html">Du Lịch</a>
                                 </li>
                                 <li >
                                     <a href="blog-standard.html">Blogs</a>
@@ -267,17 +256,17 @@ Banderban
                                     <a href="javascript:void(0)">Pages</a>
                                     <i class="fl flaticon-plus">+</i>
                                     <ul class="sub-menu">
-                                        <li><a href="guide.html">Guide</a></li>
+                                        <li><a href="guide.html">Hướng Dẫn Viên</a></li>
                                         
-                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="faq.html">Câu Hỏi</a></li>
                                         
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
                             <div class="inner-contact-options d-xl-none">
                                 <div class="contact-box-inner"><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></div>
-                                <div class="contact-box-inner"><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#81e8efe7eec1e4f9e0ecf1ede4afe2eeec"><span class="__cf_email__" data-cfemail="432a2d252c03263b222e332f266d202c2e">[email&#160;protected]</span></a></div>
+                                <div class="contact-box-inner"><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#4b22252d240b2e332a263b272e65282426"><span class="__cf_email__" data-cfemail="dcb5b2bab39cb9a4bdb1acb0b9f2bfb3b1">[email&#160;protected]</span></a></div>
                             </div>
                         </nav>
                     </div>
@@ -289,6 +278,9 @@ Banderban
                                 </li>
                                 <li class="search-toggle">
                                     <i class='bx bx-search-alt'></i>
+                                </li>
+                                <li class="profile-toggle">
+                                    <a href="./sign.html"><i class='bx bx-category'></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -302,10 +294,10 @@ Banderban
     <div class="breadcrumb breadcrumb-style-one">
         <div class="container">
             <div class="col-lg-12 text-center">
-                <h2 class="breadcrumb-title">Error</h2>
+                <h2 class="breadcrumb-title">Lỗi</h2>
                 <ul class="d-flex justify-content-center breadcrumb-items">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Error</li>
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">Lỗi</li>
                 </ul>
             </div>
         </div>
@@ -321,10 +313,10 @@ Banderban
                             <img src="assets/images/shapes/error-vactor.png" alt="" class="img-fluid">
                         </div>
                         <div class="error-text">
-                            <h2>That Page Are Not Found</h2>
-                            <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum. Sed pellentesque at nunc eget consente consectetur.Duis rutrum nisl urna. Maecenas vel libero </p>
+                            <h2>Không tìm thấy trang</h2>
+                            <p></p>
                             <div class="error-btn">
-                                <a href="index.html"><i class="bi bi-house-door"></i> GO TO HOME</a>
+                                <a href="index.html"><i class="bi bi-house-door"></i>Về trang chủ</a>
                             </div>
                         </div>
                     </div>
@@ -343,9 +335,9 @@ Banderban
                 <div class="row justify-content-center g-4">
                     <div class="col-lg-4">
                         <div class="footer-about text-lg-start text-center">
-                            <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula.</p>
+                            <p>Công ty Lữ hành TRAVELLAB là một trong những công ty thương hiệu lữ hành hàng đầu Việt Nam.</p>
                             <div class="footer-social-wrap">
-                                <h5>Follow Us On:</h5>
+                                <h5>Theo dõi chúng tôi tại:</h5>
                                 <ul class="footer-social-links justify-content-lg-start justify-content-center">
                                     <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
                                     <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
@@ -360,59 +352,25 @@ Banderban
                         <div class="footer-widget">
                             <h4 class="footer-widget-title">Quick Link</h4>
                             <ul class="footer-links">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="package.html">Tour Package</a></li>
-                                <li><a href="destination.html">Destination</a></li>
-                                <li><a href="guide.html">Tour Guide</a></li>
-                                <li><a href="package-details.html">Booking Process</a></li>
+                                <li><a href="about.html">Về chúng tôi</a></li>
+                                <li><a href="package.html">Các Tour du lịc</a></li>
+                                <li><a href="destination.html">Điểm đến</a></li>
+                                <li><a href="guide.html">Hướng dẫn viên</a></li>
+                               
                                 <li><a href="blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4">
-                        <div class="footer-widget">
-                            <h4 class="footer-widget-title">Tour Type</h4>
-                            <ul class="footer-links">
-                                <li><a href="#">Wild & Adventure Tours</a></li>
-                                <li><a href="#">Group Tour</a></li>
-                                <li><a href="#">Seasonal Tours</a></li>
-                                <li><a href="#">Relaxation Tours</a></li>
-                                <li><a href="#">Family Friendly Tours</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer-widget">
-                            <h4 class="footer-widget-title text-center">Gallery</h4>
-                            <div class="footer-gallary-grid">
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-1.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-1.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-2.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-2.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-3.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-3.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-4.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-4.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-5.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-5.png" alt=""></a>
-                                </div>
-                                <div class="footer-gallary-item">
-                                    <a href="assets/images/gallary/fg-6.png" data-fancybox="footer" data-caption="Caption Here"><img src="assets/images/gallary/fg-6.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                
                 </div>
                 <div class="footer-contact-wrapper">
-                    <h5>Contact Us:</h5>
+                    <h5>Liên hệ chúng tôi:</h5>
                     <ul class="footer-contact-list">
-                        <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+1 763-227-5032</a></li>
-                        <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#345d5a525b74405b41464c44465b1a575b59"><span class="__cf_email__" data-cfemail="7c15121a133c0813090e040c0e13521f1311">[email&#160;protected]</span></a></li>
-                        <li><i class="bi bi-geo-alt"></i> <a href="#">2752 Willison Street Eagan, United State</a></li>
+                        <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+84 123456789</a></li>
+                        <li><i class="bi bi-envelope-open"></i> <a href="/cdn-cgi/l/email-protection#f29b9c949db2869d87808a82809ddc919d9f">travellab@gmail.com</a>
+                        </li>
+                        <li><i class="bi bi-geo-alt"></i> <a href="#">123 Đường Linh Trung, Phường Linh Trung, TP Thủ Đức</a></li>
                     </ul>
                 </div>
             </div>
@@ -422,7 +380,7 @@ Banderban
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-4 col-md-6 order-lg-1 order-3 ">
                         <div class="copyright-link text-lg-start text-center">
-                            <p>Copyright 2021 TourXPro | Design By <a href="#"> Egens Lab</a></p>
+                            <p>Copyright 2022 TravelLab | Thiết kế bởi <a href="#"> nhóm 18</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4  order-lg-2 order-1">
@@ -433,8 +391,8 @@ Banderban
                     <div class="col-lg-4 col-md-6 order-lg-3 order-2">
                         <div class="policy-links">
                             <ul class="policy-list justify-content-lg-end justify-content-center">
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Điều khoản </a></li>
+                                <li><a href="#">Giấy phép</a></li>
                             </ul>
                         </div>
                     </div>
