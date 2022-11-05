@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
 </head>
@@ -27,23 +27,31 @@
       aria-label="Hide Sidebar"></a>
     <!-- Navbar Right Menu-->
     <ul class="app-nav">
-
+      <li><a class="app-nav__item" style="background-color: var(--primary);color: white;" href="/index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+  
+      </li>
+      <li><a class="app-nav__item" style="background-color: var(--primary);color: white;" ><i class="fa-regular fa-comment"></i> </a></li>
+      <li><a class="app-nav__item" style="background-color: var(--primary);color: white;" ><i class="fa-regular fa-bell"></i> </a></li>
+      <div class="col-divide" style="background-color: rgb(185, 185, 185); width: 0.05rem;height: 100%; margin-right: 1rem;"></div>
+      <li>
+        <div class="app-header_user">
+          <span class="app-header_user-name"><b>Admin</b></span> 
+          <img class="app-header_user-avatar" src="../assets/images/guide/guide-md10.png" 
+        alt="User Image">
+        
+        
+     </div>
+    </li>
 
       <!-- User Menu-->
-      <li><a class="app-nav__item" href="/index.html"><i class='bx bx-log-out bx-rotate-180'></i> </a>
-
-      </li>
     </ul>
   </header>
   <!-- Sidebar menu-->
   <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
   <aside class="app-sidebar">
-    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="/images/hay.jpg" width="50px"
-        alt="User Image">
-      <div>
-        <p class="app-sidebar__user-name"><b>Admin</b></p>
+    <div class="app-sidebar__user">
         <p class="app-sidebar__user-designation">Chào mừng Admin trở lại</p>
-      </div>
+      
     </div>
     <hr>
     <ul class="app-menu">
@@ -63,8 +71,12 @@
       <li><a class="app-menu__item" href="table-data-voucher.html"><i class='app-menu__icon bx bx-run'></i><span
             class="app-menu__label">Quản lý Voucher
           </span></a></li>
-      <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
-            class="app-menu__label">Bảng kê lương</span></a></li>
+      <!-- <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
+            class="app-menu__label">Bảng kê lương</span></a></li> -->
+            <li><a class="app-menu__item" href="table-data-blog.html"><i
+              class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý Blog</span></a>
+        </li>
+  
       <li><a class="app-menu__item" href="quan-ly-bao-cao.html"><i
             class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Báo cáo doanh thu</span></a>
       </li>
@@ -129,59 +141,7 @@
               </div>
             </div>
           </div>
-           <!-- col-12 -->
-           <div class="col-md-12">
-            <div class="tile">
-                <h3 class="tile-title">Tình trạng đơn hàng</h3>
-              <div>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>ID đơn hàng</th>
-                      <th>Tên khách hàng</th>
-                      <th>Tổng tiền</th>
-                      <th>Trạng thái</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>AL3947</td>
-                      <td>Phạm Thị Ngọc</td>
-                      <td>
-                        19.770.000 đ
-                      </td>
-                      <td><span class="badge bg-info">Chờ xử lý</span></td>
-                    </tr>
-                    <tr>
-                      <td>ER3835</td>
-                      <td>Nguyễn Thị Mỹ Yến</td>
-                      <td>
-                        16.770.000 đ	
-                      </td>
-                      <td><span class="badge bg-warning">Đang vận chuyển</span></td>
-                    </tr>
-                    <tr>
-                      <td>MD0837</td>
-                      <td>Triệu Thanh Phú</td>
-                      <td>
-                        9.400.000 đ	
-                      </td>
-                      <td><span class="badge bg-success">Đã hoàn thành</span></td>
-                    </tr>
-                    <tr>
-                      <td>MT9835</td>
-                      <td>Đặng Hoàng Phúc	</td>
-                      <td>
-                        40.650.000 đ	
-                      </td>
-                      <td><span class="badge bg-danger">Đã hủy	</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- / div trống-->
-            </div>
-           </div>
+           
             <!-- / col-12 -->
              <!-- col-12 -->
             <div class="col-md-12">
@@ -235,22 +195,53 @@
       <!--Right-->
       <div class="col-md-12 col-lg-6">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-16">
             <div class="tile">
-              <h3 class="tile-title">Dữ liệu 6 tháng đầu vào</h3>
-              <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>
+                <h3 class="tile-title">Đơn hàng đang chờ xác nhận</h3>
+              <div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>ID TOUR</th>
+                      <th>ID khách hàng</th>
+                      <th>Tổng tiền</th>
+                      <th>Trạng thái</th>
+                      <th>Xác nhận</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TOUR3947</td>
+                      <td>KH011</td>
+                      <td>
+                        19.770.000 đ
+                      </td>
+                      <td><span class="badge bg-info">Chờ xác nhận</span></td>
+                      <td><button class="btn btn-primary btn-sm save" type="button" title="Xác nhận"
+                            onclick="myFunction(this)"><i class="fas fa-check"></i>
+                          </button>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>TOUR3947</td>
+                      <td>KH011</td>
+                      <td>
+                        19.770.000 đ
+                      </td>
+                      <td><span class="badge bg-info">Chờ xác nhận</span></td>
+                      <td><button class="btn btn-primary btn-sm save" type="button" title="Xác nhận"
+                        onclick="myFunction(this)"><i class="fas fa-check"></i>
+                      </button>
+                      </td>
+                    </tr>
+                
+                   
+                  </tbody>
+                </table>
               </div>
+              <!-- / div trống-->
             </div>
-          </div>
-          <div class="col-md-12">
-            <div class="tile">
-              <h3 class="tile-title">Thống kê 6 tháng doanh thu</h3>
-              <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="barChartDemo"></canvas>
-              </div>
-            </div>
-          </div>
+           </div>
         </div>
 
       </div>
@@ -262,7 +253,7 @@
       <p><b>Copyright
           <script type="text/javascript">
             document.write(new Date().getFullYear());
-          </script> Phần mềm quản lý bán hàng | Dev By Trường
+          </script> Trang quản lý Admin
         </b></p>
     </div>
   </main>

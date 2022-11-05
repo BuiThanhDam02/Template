@@ -15662,3 +15662,19 @@ text-align:center;
   background-color: white;
   color: white;
 }
+.app-header_user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-top: 0.1rem;
+  gap: 1rem;
+}
+.app-header_user-avatar{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.app-header_user-name{
+  color: white;
+}

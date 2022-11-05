@@ -41,7 +41,7 @@
         alt="User Image">
         
         
-     </div>
+      </div>
     </li>
 
       <!-- User Menu-->
@@ -52,7 +52,7 @@
   <aside class="app-sidebar">
     <div class="app-sidebar__user">
         <p class="app-sidebar__user-designation">Chào mừng Admin trở lại</p>
-     
+      
     </div>
     <hr>
     <ul class="app-menu">
@@ -67,14 +67,15 @@
       <li><a class="app-menu__item" href="table-data-product.html"><i
             class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý Tour</span></a>
       </li>
-      <li><a class="app-menu__item" href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
-            class="app-menu__label">Quản lý đơn đặt Tour</span></a></li>
-      <li><a class="app-menu__item active" href="table-data-voucher.html"><i class='app-menu__icon bx bx-run'></i><span
+      <li><a class="app-menu__item " href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
+            class="app-menu__label ">Quản lý đơn đặt Tour</span></a></li>
+      <li><a class="app-menu__item" href="table-data-voucher.html"><i class='app-menu__icon bx bx-run'></i><span
             class="app-menu__label">Quản lý Voucher
           </span></a></li>
+     
       <!-- <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
             class="app-menu__label">Bảng kê lương</span></a></li> -->
-            <li><a class="app-menu__item" href="table-data-blog.html"><i
+            <li><a class="app-menu__item active" href="table-data-blog.html"><i
               class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý Blog</span></a>
         </li>
   
@@ -90,101 +91,50 @@
     <main class="app-content">
       <div class="app-title">
         <ul class="app-breadcrumb breadcrumb">
-          <li class="breadcrumb-item">Quản lý Voucher</li>
-          <li class="breadcrumb-item"><a href="#">Tạo mới</a></li>
+          <li class="breadcrumb-item">Danh sách Blog</li>
+          <li class="breadcrumb-item"><a href="#">Thêm Blog</a></li>
         </ul>
       </div>
       <div class="row">
         <div class="col-md-12">
           <div class="tile">
-            <h3 class="tile-title">Tạo mới danh sách Voucher</h3>
+            <h3 class="tile-title">Tạo mới Blog</h3>
             <div class="tile-body">
-              <!-- <div class="row element-button">
-                <div class="col-sm-2">
-                  <a class="btn btn-add btn-sm" data-toggle="modal" data-target="#exampleModalCenter"><b><i
-                        class="fas fa-folder-plus"></i> Tạo tình trạng mới</b></a>
-                </div>
-  
-              </div> -->
               <form class="row">
-                <div class="form-group col-md-4">
-                  <label class="control-label">ID Voucher</label>
+                <div class="form-group  col-md-4">
+                  <label class="control-label">ID Blog</label>
                   <input class="form-control" type="text">
                 </div>
-                <div class="form-group col-md-4">
-                  <label class="control-label">Ngày bắt đầu</label>
-                  <input class="form-control" type="date">
+                <div class="form-group  col-md-4">
+                  <label class="control-label">ID Hướng dẫn viên</label>
+                  <input class="form-control" type="text" >
                 </div>
-                <div class="form-group col-md-4">
-                  <label class="control-label">Ngày kết thúc</label>
-                  <input class="form-control" type="date">
+                
+                <div class="form-group  col-md-4">
+                  <label class="control-label">Tiêu đề</label>
+                  <input class="form-control" type="text">
                 </div>
-                <div class="form-group col-md-4">
-                  <label class="control-label">Giá trị khuyến mãi</label>
-                  <input class="form-control" type="number">
+                <div class="form-group  col-md-4">
+                  <label class="control-label">Ngày viết bài</label>
+                  <input class="form-control" type="date" >
                 </div>
-                <div class="form-group col-md-4">
-                        <label for="exampleSelect1" class="control-label">Trạng thái</label>
-                        <select class="form-control" id="exampleSelect1">
-                          <option>-- Chọn trạng thái --</option>
-                          <option>Khả dụng</option>
-                          <option>Hết khả dụng</option>
-                          
-                        </select>
-                      </div>
-                     
-                  
-                  
-            <div class="tile-footer">
-            </div>
+                
+                <div class="form-group  col-md-4">
+                  <label class="control-label">Nội dung</label>
+                  <textarea class="form-control" ></textarea>
+                </div>  
+                
           </div>
           <button class="btn btn-save" type="button">Lưu lại</button>
-          <a class="btn btn-cancel" href="table-data-voucher.html">Hủy bỏ</a>
+          <a class="btn btn-cancel" href="table-data-blog.html">Hủy bỏ</a>
         </div>
     </main>
-
- <!--
-  MODAL
--->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-data-backdrop="static" data-keyboard="false">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-
-    <div class="modal-body">
-      <div class="row">
-        <div class="form-group  col-md-12">
-          <span class="thong-tin-thanh-toan">
-            <h5>Tạo trình trạng mới</h5>
-          </span>
-        </div>
-        <div class="form-group col-md-12">
-          <label class="control-label">Nhập tình trạng</label>
-          <input class="form-control" type="text" required>
-        </div>
-      </div>
-      <BR>
-      <button class="btn btn-save" type="button">Lưu lại</button>
-      <a class="btn btn-cancel" data-dismiss="modal" href="#">Hủy bỏ</a>
-      <BR>
-    </div>
-    <div class="modal-footer">
-    </div>
-  </div>
-</div>
-</div>
-<!--
-MODAL
--->
-
- <!-- Essential javascripts for application to work-->
- <script src="js/jquery-3.2.1.min.js"></script>
- <script src="js/popper.min.js"></script>
- <script src="js/bootstrap.min.js"></script>
- <script src="js/main.js"></script>
- <!-- The javascript plugin to display page loading on top-->
- <script src="js/plugins/pace.min.js"></script>
-
-</body>
-
+   <!-- Essential javascripts for application to work-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- The javascript plugin to display page loading on top-->
+  <script src="js/plugins/pace.min.js"></script>
+  </body>
 </html>
