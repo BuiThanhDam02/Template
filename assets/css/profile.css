@@ -1,5 +1,6 @@
 .profile{
     width: 1600px;
+    color: #2d4271;
 }
 
 .btn-hidden{
@@ -71,6 +72,7 @@
 .box-items-left{
     border: 1px solid #cad2c5;
     border-radius: 10px;
+    height: 400px;
 }
 
 .miss-pass{
@@ -82,4 +84,34 @@
     color: #264653;
     font-weight: 600;
 
+}
+.setting-item{
+    border-top: 0.5px solid #cad2c5;
+    min-height: 70px;
+   display: flex;
+   align-items: center;
+    
+}
+.setting-item .setting-label{
+    color: #2d4271;
+    
+}
+.setting-item .display-form span{
+    color: #2d4271;
+    font-weight: 400;
+}
+.setting-item .display-form-content p{
+    color: #2d4271;
+    font-weight: 400;
+}
+.toggle-edit-form{
+    float: right;
+}
+.setting-item .row .display-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.setting-item .row .col-12 .edit-form{
+position: relative;
 }
