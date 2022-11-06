@@ -1,6 +1,9 @@
 .profile{
     width: 1600px;
     width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .btn-hidden{
@@ -14,11 +17,12 @@
     border-radius: 10px;
 }
 
-.container_profile{
+/* .container_profile{
    display: flex;
    justify-content: center;
    align-items: center;
-}
+} */
+
 .content{
     display: flex;
     width: 100%;
@@ -105,4 +109,12 @@
     border-top: 1px solid #DEE2E6;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.col-sm-7 input{
+    width: 250px;
+}
+
+.col-md-7{
+    width: 275px;
 }
