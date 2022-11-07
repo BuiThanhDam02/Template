@@ -8026,6 +8026,10 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
     height: 465px;
 }
 
+.swiper-slide .testimonial-card{
+    height: 320px;
+}
+
 .guide-card-gamma{
     margin-left: 30px;
 }
