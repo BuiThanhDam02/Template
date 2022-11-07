@@ -1,6 +1,9 @@
 .profile{
     width: 1600px;
-    color: #2d4271;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .btn-hidden{
@@ -9,21 +12,20 @@
 
 .ps-md-4{
     margin-left: 40px;
-    width: 950px;
+    width: 920px;
     border: 1px solid #cad2c5;
     border-radius: 10px;
 }
-.profile{
-    width: 100%;
-}
-.container_profile{
+
+/* .container_profile{
    display: flex;
    justify-content: center;
    align-items: center;
-}
+} */
+
 .content{
     display: flex;
-
+    width: 100%;
 }
 
 .toggle-edit-form{
@@ -32,6 +34,7 @@
 
 .toggle-edit-form:hover{
     color: #8d99ae;
+    cursor: pointer;
 }
 
 .d-inline-flex{
@@ -72,7 +75,6 @@
 .box-items-left{
     border: 1px solid #cad2c5;
     border-radius: 10px;
-    height: 400px;
 }
 
 .miss-pass{
@@ -83,35 +85,36 @@
 .nav-item .nav-link{
     color: #264653;
     font-weight: 600;
+}
 
+.form-control{
+    width: 200px;
 }
+
+.text-end{
+    margin-top: 40px;
+}
+
+.text-end button{
+    background-color: var(--c-primary);
+    border: 1px solid var(--c-primary);
+}
+
+.text-end button:hover{
+    background-color: #565E64;
+}
+
 .setting-item{
-    border-top: 0.5px solid #cad2c5;
-    min-height: 70px;
-   display: flex;
-   align-items: center;
-    
+    width: 840px;
+    border-top: 1px solid #DEE2E6;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.setting-item .setting-label{
-    color: #2d4271;
-    
+
+.col-sm-7 input{
+    width: 250px;
 }
-.setting-item .display-form span{
-    color: #2d4271;
-    font-weight: 400;
-}
-.setting-item .display-form-content p{
-    color: #2d4271;
-    font-weight: 400;
-}
-.toggle-edit-form{
-    float: right;
-}
-.setting-item .row .display-form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.setting-item .row .col-12 .edit-form{
-position: relative;
+
+.col-md-7{
+    width: 275px;
 }

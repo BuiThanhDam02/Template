@@ -8006,6 +8006,35 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
     margin-left: 40px;
 }
 
+.d-card-thumb img{
+    height: 235px;
+}
+
+.col-sm-10 .package-card-delta{
+    height: 465px;
+}
+
+.col-lg-4 .package-card-delta{
+    height: 465px;
+}
+
+.package-thumb img{
+    height: 250px;
+}
+
+.swiper-slide .package-card-delta{
+    height: 465px;
+}
+
+.guide-card-gamma{
+    margin-left: 30px;
+}
+
+.guide-image{
+    padding-left: 20px;
+}
+
+
 
 
 

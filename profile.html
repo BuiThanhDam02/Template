@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TraveLab - Khám phá đất nước của chúng ta</title>
+    <title>TravelLab - Khám phá đất nước của chúng ta</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
 
-    <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
@@ -279,10 +279,10 @@ Hội An
                                   <i class='bx bx-category'></i>
                               </li>
                               <li class="search-toggle">
-                                  <i class='bx bx-search-alt'></i>
+                                <i class='bx bx-search' ></i>
                               </li>
                               <li class="profile-toggle">
-                                  <a href="./sign.html"><i class='bx bx-category'></i></a>
+                                  <a href="./sign.html"><i class='bx bx-user' ></i></a>
                               </li>
                           </ul>
                       </div>
@@ -293,6 +293,7 @@ Hội An
   </header>
   <!-- col-md-3 col-12 left box-items-left  col-md-9 col-12 right ps-md-4 -->
     <div class="profile-wrapper">
+      <div class="container">
         <main role="main">
             <main role="main">
               <div class="profile">
@@ -335,7 +336,7 @@ Hội An
                                 data-bs-target="#getting-started-collapse"
                                 aria-expanded="false"
                               >
-                                <h6 class="fw-bold">Tài khoản</h6>
+                                <h6 style="cursor: pointer;" class="fw-bold">Tài khoản</h6>
                               </a>
                               <div
                                 class="collapse "
@@ -489,76 +490,13 @@ Hội An
                             </button>
                           </div>
                         </div>
-                        }
                       </div>
                     </div>
                     <script
                       data-cfasync="false"
                       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                     ></script>
-                    <script>
-                      function LogoutAccount() {
-                        if (!confirm("Xác nhận đăng xuất?")) {
-                          return false;
-                        }
-                        //Logout action
-                        $.ajax({
-                          url: "/AccountMember/LogoutAccount",
-                          type: "POST",
-                          contentType: "json",
-                          data: {},
-                          success: function (result) {
-                            if (result.length > 0) {
-                              alert(result);
-                              location.href = "/AccountMember/Login";
-                            }
-                          },
-                          error: function () {
-                            alert("Không thực hiện được");
-                          },
-                        });
-                      }
-      
-                      var myModal = new bootstrap.Modal(
-                        document.getElementById("deleteAccountModal"),
-                        {
-                          keyboard: false,
-                        }
-                      );
-      
-                      $("#deleteAccount").click(function () {
-                        event.preventDefault();
-                        myModal.show();
-                      });
-      
-                      $("#btnSendRequest").click(function () {
-                        event.preventDefault();
-                        var ReasonName = $("#ReasonName").val();
-                        if (ReasonName === "") {
-                          alert("Vui lòng nhập lý do");
-                        } else {
-                          $.ajax({
-                            url: "/Profile/DeleteAccount",
-                            type: "GET",
-                            /*contentType: 'json',*/
-                            data: {
-                              Reason: ReasonName,
-                            },
-                            success: function (result) {
-                              if (result.length > 0) {
-                                alert(result);
-                                location.href = "/AccountMember/Login";
-                              } else {
-                                alert("Xóa tài khoản không thành công");
-                              }
-                            },
-                            error: function () {
-                              alert("Không thực hiện được");
-                            },
-                          });
-                        }
-                      });
-                    </script>
+                    
       
                     <div class="ps-md-4">
                       <div class="wrapper p-md-4">
@@ -622,6 +560,7 @@ Hội An
                                     <div class="display-form">
                                       <span>Hữu Đạt Nguyễn</span>
                                       <a onclick="btnHidden1()"
+                                      id="btn"
                                         class="fw-bold text-underline toggle-edit-form"
                                         >Chỉnh sửa</a
                                       >
@@ -629,7 +568,7 @@ Hội An
                                     <div class="edit-form btn-hidden" id="edit_name">
                                       <div class="edit-form-wrapper">
                                         <div class="form-group">
-                                          
+                                          <label>Họ và Tên</label>
                                           <input
                                             class="form-control"
                                             id="Fullname"
@@ -747,7 +686,6 @@ Hội An
                                 </div>
                               </div>
                             </div>
-
                             <div class="row setting-item">
                               <div class="col-md-3 col-12 setting-label">
                                 Số điện thoại
@@ -765,33 +703,31 @@ Hội An
                                       >
                                     </div>
                                     <div class="edit-form btn-hidden" id="edit_sdt">
-                                        <div class="edit-form-wrapper">
-                                          <div class="form-group">
-                                            <input
-                                              class="form-control"
-                                              id="Telephone"
-                                              name="Telephone"
-                                              placeholder="Số điện thoại"
-                                              type="text"
-                                              value=""
-                                            />
-                                          </div>
+                                      <div class="edit-form-wrapper">
+                                        <div class="form-group">
+                                          <input
+                                            class="form-control"
+                                            id="Telephone"
+                                            name="Telephone"
+                                            placeholder="Số điện thoại"
+                                            type="text"
+                                            value=""
+                                          />
                                         </div>
-                                        <div class="text-end">
-                                          <button
-                                            class="btn btn-sm btn-secondary edit-form-submit"
-                                            onclick="ChangePhone()"
-                                          >
-                                            Xong
-                                          </button>
-                                        </div>
+                                      </div>
+                                      <div class="text-end">
+                                        <button
+                                          class="btn btn-sm btn-secondary edit-form-submit"
+                                          onclick="ChangePhone()"
+                                        >
+                                          Xong
+                                        </button>
+                                      </div>
                                     </div>
-                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                                <!--  -->
                             </div>
-
                             <div class="row setting-item">
                               <div class="col-md-3 col-12 setting-label">
                                 Ngày sinh
@@ -5730,7 +5666,7 @@ Hội An
             ></script>
           </main>
     </div>
-
+  </div>
     <div class="footer-area mt-110">
       <div class="footer-main-wrapper">
           <div class="footer-vactor">
@@ -5819,6 +5755,7 @@ Hội An
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/profile.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
