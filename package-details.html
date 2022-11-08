@@ -253,8 +253,15 @@ Hội An
                                     <a href="blog-standard.html">Blogs</a>
                                 
                                 </li>
-                                <li>
-                                    <a href="guide.html">Hướng Dẫn Viên</a>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="guide.html">Hướng Dẫn Viên</a></li>
+                                        
+                                        <li><a href="faq.html">Câu Hỏi</a></li>
+                                        
+                                    </ul>
                                 </li>
                                 <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
@@ -493,82 +500,169 @@ Hội An
                                         </div>
                                     </div>
                                     <div class="comment-section">
-                                        <ul class="comment-list">
-                                            <li class="single-comment d-flex flex-sm-row flex-column ">
-                                                <div class="commmentor">
-                                                    <img src="assets/images/reviewer/commertor2.png" alt="">
-                                                </div>
-                                                <div class="comment mt-4 mt-sm-0">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <div class="info">
-                                                            <h6>Nguyễn Minh Thiện</h6>
-                                                            <span>2 Tháng 3, 2021 20.00 Tối</span>
+                                        <div class="comment-list" id="group-comment">
+                                            <div class="single-comment " >
+                                                <div>
+                                                    <div class="commmentor">
+                                                        <img src="assets/images/reviewer/commertor2.png" alt="">
+                                                    </div>
+                                                    <div class="comment mt-4 mt-sm-0">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="info">
+                                                                <h6>Nguyễn Minh Thiện</h6>
+                                                                <span>2 Tháng 3, 2021 20.00 Tối</span>
+                                                            </div>
+                                                            <ul class="rating d-flex ">
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                            </ul>
                                                         </div>
-                                                        <ul class="rating d-flex ">
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>Trong suốt chuyến đi, cả VP mình ai cũng đều hào hứng. Không một ai cảm thấy mệt mỏi hay chán nản. Tất cả đều hướng đến vì một tập thể làm hết sức, chơi hết mình.</p>
-                                                    <div class="reply-btn">
-                                                        <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="single-comment d-flex flex-sm-row flex-column">
-                                                <div class="commmentor">
-                                                    <img src="assets/images/reviewer/commertor3.png" alt="">
-                                                </div>
-                                                <div class="comment mt-4 mt-sm-0">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <div class="info">
-                                                            <h6>Lê Ngọc Ánh</h6>
-                                                            <span>23 Tháng 10, 2021 18.00 Tối</span>
+                                                        <p>Trong suốt chuyến đi, cả VP mình ai cũng đều hào hứng. Không một ai cảm thấy mệt mỏi hay chán nản. Tất cả đều hướng đến vì một tập thể làm hết sức, chơi hết mình.</p>
+                                                        <div class="reply-btn">
+                                                            <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
                                                         </div>
-                                                        <ul class="rating d-flex ">
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>Ngoài những bãi biển tuyệt đẹp không thể chê vào đâu được, là đội ngũ HDV và tư vấn viên nhiệt tình, hiểu biết và trách nhiệm.</p>
-                                                    <div class="reply-btn">
-                                                        <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li class="single-comment d-flex flex-sm-row flex-column">
-                                                <div class="commmentor">
-                                                    <img src="assets/images/reviewer/commertor1.png" alt="">
-                                                </div>
-                                                <div class="comment mt-4 mt-sm-0">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <div class="info">
-                                                            <h6>Nguyễn Bảo Trân</h6>
-                                                            <span>5 Tháng 4, 2021 10.00 Sáng</span>
+                                            </div>
+                                            <div class="single-comment ">
+                                                <div>
+                                                    <div class="commmentor">
+                                                        <img src="assets/images/reviewer/commertor3.png" alt="">
+                                                    </div>
+                                                    <div class="comment mt-4 mt-sm-0">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="info">
+                                                                <h6>Lê Ngọc Ánh</h6>
+                                                                <span>23 Tháng 10, 2021 18.00 Tối</span>
+                                                            </div>
+                                                            <ul class="rating d-flex ">
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                            </ul>
                                                         </div>
-                                                        <ul class="rating d-flex ">
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                            <li><i class="bi bi-star-fill"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>Hơn cả mong đợi. Cả công ty mình rất vui, ai nấy đều hài lòng về dịch vụ của TRAVELLAB vừa đến Đà Nẵng đã được tài xế của công ty đón tiếp rất nhiệt tình</p>
-                                                    <div class="reply-btn">
-                                                        <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
+                                                        <p>Ngoài những bãi biển tuyệt đẹp không thể chê vào đâu được, là đội ngũ HDV và tư vấn viên nhiệt tình, hiểu biết và trách nhiệm.</p>
+                                                        <div class="reply-btn">
+                                                            <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                        <div class="comment-btn text-center">
-                                            <a href="#">Xem Tất Cả Bình Luận</a>
+                                            </div>
+                                            <div class="single-comment ">
+                                                <div>
+                                                    <div class="commmentor">
+                                                        <img src="assets/images/reviewer/commertor1.png" alt="">
+                                                    </div>
+                                                    <div class="comment mt-4 mt-sm-0">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="info">
+                                                                <h6>Nguyễn Bảo Trân</h6>
+                                                                <span>5 Tháng 4, 2021 10.00 Sáng</span>
+                                                            </div>
+                                                            <ul class="rating d-flex ">
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>Hơn cả mong đợi. Cả công ty mình rất vui, ai nấy đều hài lòng về dịch vụ của TRAVELLAB vừa đến Đà Nẵng đã được tài xế của công ty đón tiếp rất nhiệt tình</p>
+                                                        <div class="reply-btn">
+                                                            <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="single-comment " >
+                                                <div>
+                                                    <div class="commmentor">
+                                                        <img src="assets/images/reviewer/commertor2.png" alt="">
+                                                    </div>
+                                                    <div class="comment mt-4 mt-sm-0">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="info">
+                                                                <h6>Nguyễn Minh Thiện</h6>
+                                                                <span>2 Tháng 3, 2021 20.00 Tối</span>
+                                                            </div>
+                                                            <ul class="rating d-flex ">
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>Trong suốt chuyến đi, cả VP mình ai cũng đều hào hứng. Không một ai cảm thấy mệt mỏi hay chán nản. Tất cả đều hướng đến vì một tập thể làm hết sức, chơi hết mình.</p>
+                                                        <div class="reply-btn">
+                                                            <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-comment ">
+                                                <div>
+                                                    <div class="commmentor">
+                                                        <img src="assets/images/reviewer/commertor3.png" alt="">
+                                                    </div>
+                                                    <div class="comment mt-4 mt-sm-0">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="info">
+                                                                <h6>Lê Ngọc Ánh</h6>
+                                                                <span>23 Tháng 10, 2021 18.00 Tối</span>
+                                                            </div>
+                                                            <ul class="rating d-flex ">
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>Ngoài những bãi biển tuyệt đẹp không thể chê vào đâu được, là đội ngũ HDV và tư vấn viên nhiệt tình, hiểu biết và trách nhiệm.</p>
+                                                        <div class="reply-btn">
+                                                            <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-comment ">
+                                                <div>
+                                                    <div class="commmentor">
+                                                        <img src="assets/images/reviewer/commertor1.png" alt="">
+                                                    </div>
+                                                    <div class="comment mt-4 mt-sm-0">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="info">
+                                                                <h6>Nguyễn Bảo Trân</h6>
+                                                                <span>5 Tháng 4, 2021 10.00 Sáng</span>
+                                                            </div>
+                                                            <ul class="rating d-flex ">
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>Hơn cả mong đợi. Cả công ty mình rất vui, ai nấy đều hài lòng về dịch vụ của TRAVELLAB vừa đến Đà Nẵng đã được tài xế của công ty đón tiếp rất nhiệt tình</p>
+                                                        <div class="reply-btn">
+                                                            <a href="#"><i class="bi bi-reply-all-fill"></i> Trả Lời</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="comment-btn text-center" id="show-more-div">
+                                            <!-- <span id="show-more-button" style="font-weight: 500;color: var(--c-primary);cursor: pointer;">Xem Thêm Bình Luận</span> -->
                                         </div>
                                     </div>
                                     <form action="#" id="comment_form" method="post">
@@ -1033,6 +1127,92 @@ Hội An
 
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script>
+        jQuery(function () {
+            const list = $('#group-comment');
+            const listComment = list.children();
+            const displayProduct =3;
+            const showMoreDiv = $('#show-more-div');
+            let page =1 ;
+           if (listComment.length ===0) {
+            showMoreDiv.append(`
+                <span id="show-more-button" style="font-weight: 500;color: var(--c-primary);;">Chưa Có Đánh Giá</span>
+            `);   
+           }else if (listComment.length <= 3) {
+            $('#show-more-button').remove();
+                  
+
+           }else {
+            showMoreDiv.append(`
+                <span id="show-more-button" style="font-weight: 500;color: var(--c-primary);cursor: pointer;">Xem Thêm Đánh Giá</span>
+            `); 
+           }
+              
+            
+              
+            console.log(listComment)
+          
+                 for (let j = 0; j < listComment.length; j++) {
+                     listComment[j].classList.add('display-hide');
+                     console.log(listComment[j])
+                    
+                };
+                
+            function displayItem(listComment,list,displayProduct,page) {
+                page--;
+                for (let j = 0; j < listComment.length; j++) {
+                   listComment[j].classList.remove('display-hide');
+                    
+                }
+                for (let j = 0; j < listComment.length; j++) {
+                   listComment[j].classList.add('display-hide');
+                    
+                }
+                let loop_end = displayProduct * page;
+                let renderItem = listComment.slice(0,loop_end+displayProduct);
+                for (let index = 0; index < renderItem.length; index++) {
+                    renderItem[index].classList.toggle('display-hide');   
+                }
+                if (listComment.length === renderItem.length) {
+                   $('#show-more-button').remove();
+                    showMoreDiv.append(`
+                        <span id="show-less-button" style="font-weight: 500;color: var(--c-primary);cursor: pointer;">Thu Gọn Đánh Giá</span>
+                    `); 
+                    jQuery(function () {
+          
+                        jQuery("#show-less-button").click(function () {
+                           
+                            page = 1;
+                            $('#show-less-button').remove();
+                            showMoreDiv.append(`
+                                <span id="show-more-button" style="font-weight: 500;color: var(--c-primary);cursor: pointer;">Xem Thêm Đánh Giá</span>
+                             `); 
+                             jQuery(function () {
+          
+                                jQuery("#show-more-button").click(function () {
+                                    page++;
+                                    displayItem(listComment,list,displayProduct,page);
+                                    });
+                            });
+                            displayItem(listComment,list,displayProduct,page);
+                        });
+                     });
+                }
+            };
+            displayItem(listComment,list,displayProduct,page);
+           
+            jQuery(function () {
+          
+            jQuery("#show-more-button").click(function () {
+                page++;
+                displayItem(listComment,list,displayProduct,page);
+                 });
+            });
+           
+
+        });
+    </script>
 </body>
 
 </html>

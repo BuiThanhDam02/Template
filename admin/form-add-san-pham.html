@@ -13,13 +13,13 @@
   <!-- or -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
   <link rel="stylesheet" type="text/css"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+  
   <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-  <script>
+  <!-- <script>
 
     function readURL(input, thumbimage) {
       if (input.files && input.files[0]) { //Sử dụng  cho Firefox - chrome
@@ -58,7 +58,7 @@
         $(".filename").text("");
       });
     })
-  </script>
+  </script> -->
 </head>
 
 <body class="app sidebar-mini rtl">
@@ -138,23 +138,31 @@
       aria-label="Hide Sidebar"></a>
     <!-- Navbar Right Menu-->
     <ul class="app-nav">
-
+      <li><a class="app-nav__item" style="background-color: var(--primary);color: white;" href="/index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+  
+      </li>
+      <li><a class="app-nav__item" style="background-color: var(--primary);color: white;" ><i class="fa-regular fa-comment"></i> </a></li>
+      <li><a class="app-nav__item" style="background-color: var(--primary);color: white;" ><i class="fa-regular fa-bell"></i> </a></li>
+      <div class="col-divide" style="background-color: rgb(185, 185, 185); width: 0.05rem;height: 100%; margin-right: 1rem;"></div>
+      <li>
+        <div class="app-header_user">
+          <span class="app-header_user-name"><b>Admin</b></span> 
+          <img class="app-header_user-avatar" src="../assets/images/guide/guide-md10.png" 
+        alt="User Image">
+        
+        
+     </div>
+    </li>
 
       <!-- User Menu-->
-      <li><a class="app-nav__item" href="/index.html"><i class='bx bx-log-out bx-rotate-180'></i> </a>
-
-      </li>
     </ul>
   </header>
   <!-- Sidebar menu-->
   <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
   <aside class="app-sidebar">
-    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="/images/hay.jpg" width="50px"
-        alt="User Image">
-      <div>
-        <p class="app-sidebar__user-name"><b>Admin</b></p>
+    <div class="app-sidebar__user">
         <p class="app-sidebar__user-designation">Chào mừng Admin trở lại</p>
-      </div>
+    
     </div>
     <hr>
     <ul class="app-menu">
@@ -174,8 +182,12 @@
       <li><a class="app-menu__item" href="table-data-voucher.html"><i class='app-menu__icon bx bx-run'></i><span
             class="app-menu__label">Quản lý Voucher
           </span></a></li>
-      <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
-            class="app-menu__label">Bảng kê lương</span></a></li>
+      <!-- <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
+            class="app-menu__label">Bảng kê lương</span></a></li> -->
+            <li><a class="app-menu__item" href="table-data-blog.html"><i
+              class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý Blog</span></a>
+        </li>
+  
       <li><a class="app-menu__item" href="quan-ly-bao-cao.html"><i
             class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Báo cáo doanh thu</span></a>
       </li>
@@ -270,7 +282,7 @@
               <div class="form-group col-md-12">
                 <label class="control-label">Mô tả sản phẩm</label>
                 <textarea class="form-control" name="mota" id="mota"></textarea>
-                <script>CKEDITOR.replace('mota');</script>
+                <!-- <script>CKEDITOR.replace('mota');</script> -->
               </div>
               <div class="form-group col-md-12" style="font-weight: bold;font-size: 1rem;">
                 Loại vé
@@ -350,28 +362,14 @@
               <div class="form-group col-md-12" style="font-weight: bold;font-size: 1rem;">
                 Kế hoạch chi tiết từng ngày
                 <div class="col-sm-2" style="float: right;">
-                  <a class="btn btn-add btn-sm" id="add_tour_per_day" title="Thêm ngày" ><i class="fas fa-plus"></i></a>
+                  <button class="btn btn-primary btn-sm success add_day" type="button" title="Thêm ngày" >
+                    <i class="fas fa-plus"></i>
+                  </button>
                 </div>
                 <div style="margin-top: 0.7rem;width: 99%;background-color: var(--primary);padding: 0.05rem 0.1rem;"></div>
               </div>
               <ul style="list-style: none;width: 100%;" id="group_tour_per_day" >
-                <li>
-                  <div class="form-group col-md-12" id="item_tour_per_day" style="display: flex;">
-                    <div class="form-group col-md-2">
-                      <label class="control-label">Ngày </label>
-                      <input class="form-control" type="number">
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label class="control-label">Tiêu đề của ngày</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label class="control-label">Mô tả ngày</label>
-                      <textarea class="form-control" name="mota" id="mota"></textarea>
-                      <script>CKEDITOR.replace('mota');</script>
-                    </div>
-                  </div>
-                </li>
+               
               </ul>
              
               <br>
@@ -520,56 +518,107 @@ MODAL
 
 
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/plugins/pace.min.js"></script>
-  <script>
-    const inpFile = document.getElementById("inpFile");
-    const loadFile = document.getElementById("loadFile");
-    const previewContainer = document.getElementById("imagePreview");
-    const previewContainer = document.getElementById("imagePreview");
-    const previewImage = previewContainer.querySelector(".image-preview__image");
-    const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
-    inpFile.addEventListener("change", function () {
-      const file = this.files[0];
-      if (file) {
-        const reader = new FileReader();
-        previewDefaultText.style.display = "none";
-        previewImage.style.display = "block";
-        reader.addEventListener("load", function () {
-          previewImage.setAttribute("src", this.result);
-        });
-        reader.readAsDataURL(file);
-      }
-    });
-
-
-   function addDetailDay(){
-     const group = document.getElementById('group_tour_per_day');
-    const item = document.createElement('li');
-    item.innerHTML = `<div class="form-group col-md-12" id="item_tour_per_day" style="display: flex;">
-                    <div class="form-group col-md-2">
-                      <label class="control-label">Ngày </label>
-                      <input class="form-control" type="number">
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label class="control-label">Tiêu đề của ngày</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label class="control-label">Mô tả ngày</label>
-                      <textarea class="form-control" name="mota" id="mota"></textarea>
-                    </div>
-                  </div>`;
-      group.appendChild(item);
+   <!-- Essential javascripts for application to work-->
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <!-- <script src="src/jquery.table2excel.js"></script> -->
+   <script src="js/main.js"></script>
+   <!-- The javascript plugin to display page loading on top-->
+   <script src="js/plugins/pace.min.js"></script>
+   <!-- Page specific javascripts-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+   <!-- Data table plugin-->
+   <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+   <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript">
     
-   };
-   const add = document.querySelector('#add_tour_per_day');
-   add.addEventListener('click',function (e) {
-     console.log('11')
-   })
+    
+    
+    const listDay = $("#group_tour_per_day");
+    jQuery(function () {         
+      jQuery(".add_day").click(function (e) {  
+        var listChildren = listDay.children("#item_tour_per_day");
+    
+
+            listDay.append(`
+            <li id="item_tour_per_day">
+                  <div class="form-group col-md-12"  style="display: flex;">
+                    
+                    <div class="form-group col-md-1">
+                      <label class="control-label">Ngày </label>
+                      <input class="form-control" id="item_tour_per_day_value" type="number" value=${listChildren.length+1} disabled>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label class="control-label">Tiêu đề của ngày</label>
+                      <input class="form-control" id="item_tour_per_day_title" value="" type="text">
+                    </div>
+                    <div class="form-group col-md-7">
+                      <label class="control-label">Mô tả ngày</label>
+                      <textarea class="form-control" name="mota" value="" id="mota"></textarea>
+                      
+                    </div>
+                    <div class="form-group col-md-0.5">                     
+                      <button class="btn btn-primary btn-sm trash" type="button" title="Xóa ngày"
+                                            ><i class="fas fa-trash-alt"></i> 
+                      </button>
+                    </div>
+                  </div>
+                </li>
+            `);
+              
+            jQuery(function () {
+          
+          jQuery(".trash").click(function (e) {
+            
+              swal({
+                  title: "Cảnh báo",
+                  text: "Bạn có chắc chắn là muốn xóa ngày này?",
+                  buttons: ["Hủy bỏ", "Đồng ý"],
+              })
+                  .then((willDelete) => {
+                    
+                      if (willDelete) {
+                        
+                        var i = e.currentTarget.parentNode.parentNode.parentNode;
+                      //  console.log(i) 
+                       listDay.children("#item_tour_per_day").map((index,node) => {
+                          if (node.querySelector("#item_tour_per_day_value").value === i.querySelector("#item_tour_per_day_value").value) {
+                            node.remove();
+                          }
+                       })
+                       listDay.children("#item_tour_per_day").map((index,node) => {
+                          node.querySelector("#item_tour_per_day_value").value = index +1;
+                       })
+                          swal("Đã xóa thành công.!", {
+                            
+                          });
+                      }
+                  });
+          });
+      });
+          });
+      });
+     
+    //   const inpFile = document.getElementById("inpFile");
+    // const loadFile = document.getElementById("loadFile");
+    // const previewContainer = document.getElementById("imagePreview");
+   
+    // const previewImage = previewContainer.querySelector(".image-preview__image");
+    // const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+    // inpFile.addEventListener("change", function () {
+    //   const file = this.files[0];
+    //   if (file) {
+    //     const reader = new FileReader();
+    //     previewDefaultText.style.display = "none";
+    //     previewImage.style.display = "block";
+    //     reader.addEventListener("load", function () {
+    //       previewImage.setAttribute("src", this.result);
+    //     });
+    //     reader.readAsDataURL(file);
+    //   }
+    // });
 
   </script>
 </body>

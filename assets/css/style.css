@@ -3160,7 +3160,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-four .slider-bg-1 {
     padding: 300px 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner41.png");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner41.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -3181,7 +3181,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-four .slider-bg-2 {
     padding: 300px 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner42.png");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner42.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -3378,7 +3378,8 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .package-card-alpha {
     box-shadow: 3px 5px 35px rgba(86, 68, 169, .1);
     border-radius: 10px;
-    overflow: hidden
+    overflow: hidden;
+    height: 100%;
 }
 
 .package-card-alpha:hover .package-card-body .p-card-bottom .book-btn a {
@@ -5996,11 +5997,14 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .guide-card-alpha .guide-image {
-    position: relative
+    position: relative;
+ 
 }
 
 .guide-card-alpha .guide-image img {
-    width: 100%
+    width: 100%;
+    /* height: 382px; */
+    height: 100%;
 }
 
 .guide-card-alpha .guide-image .guide-social-links {
@@ -7048,23 +7052,37 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .comment-section .comment-list .single-comment {
-    margin-top: 40px
+    margin-top: 40px;
+   
 }
 
-.comment-section .comment-list .single-comment:first-child {
+.comment-section .comment-list .single-comment div{
+    display: flex;
+}
+
+.comment-section .comment-list .single-comment div:first-child {
     margin-top: 0
 }
 
-.comment-section .comment-list .single-comment .commmentor {
+.comment-section .comment-list .single-comment div .commmentor {
     margin-right: 25px;
     padding-top: 3px
 }
 
-.comment-section .comment-list .single-comment .commmentor img {
+.comment-section .comment-list .single-comment div .commmentor img {
     max-width: 145px;
+    height: 145px;
     border-radius: 5px
 }
+.comment-section .comment-list .single-comment .comment{
+    display: flex;
+    flex-direction: column;
+}
 
+.comment-section .comment-list .single-comment .comment .info{
+    display: flex;
+    flex-direction: column;
+}
 .comment-section .comment-list .single-comment .comment .info h6 {
     font-weight: 600;
     font-size: 20px;
@@ -7119,6 +7137,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
     margin-right: 7px;
     transition: .2s
 }
+
 
 .comment-section .comment-btn {
     margin-top: 24px
@@ -8026,19 +8045,20 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
     height: 465px;
 }
 
-.swiper-slide .testimonial-card{
-    height: 320px;
-}
-
 .guide-card-gamma{
     margin-left: 30px;
 }
 
-.contact-lavel{
-    margin-left: 20px;
+.guide-image{
+    padding-left: 20px;
 }
 
+.display-hide{
+    display: none;
+}
 
-
+.col-md-6 {
+    margin-bottom: 1rem;
+}
 
 
