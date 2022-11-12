@@ -369,83 +369,83 @@ function GetDistrict(element) {
   });
 }
 
-function btnHidden1() {
-  var x = document.getElementById("edit_name");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn1 = document.getElementById('btn1');
+btn1.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn1.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn1.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn1.textContent = initialText;
   }
-}
+});
 
-function btnHidden2() {
-  var x = document.getElementById("edit_sdt");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn2= document.getElementById('btn2');
+btn2.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn2.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn2.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn2.textContent = initialText;
   }
-}
+});
 
-function btnHidden3() {
-  var x = document.getElementById("edit_birthday");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn3= document.getElementById('btn3');
+btn3.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn3.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn3.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn3.textContent = initialText;
   }
-}
+});
 
-function btnHidden4() {
-  var x = document.getElementById("edit_gender");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn4= document.getElementById('btn4');
+btn4.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn4.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn4.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn4.textContent = initialText;
   }
-}
+});
 
-function btnHidden5() {
-  var x = document.getElementById("edit_quoctich");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn5= document.getElementById('btn5');
+btn5.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn5.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn5.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn5.textContent = initialText;
   }
-}
+});
 
-function btnHidden6() {
-  var x = document.getElementById("edit_address");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn6= document.getElementById('btn6');
+btn6.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn6.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn6.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn6.textContent = initialText;
   }
-}
+});
 
-function btnHidden7() {
-  var x = document.getElementById("edit_cmnd");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn7= document.getElementById('btn7');
+btn7.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn7.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn7.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn7.textContent = initialText;
   }
-}
+});
 
-function btnHidden8() {
-  var x = document.getElementById("edit_passport");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const btn8= document.getElementById('btn8');
+btn8.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn8.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn8.textContent = 'Huỷ';
   } else {
-    x.style.display = "none";
+    btn8.textContent = initialText;
   }
-}
+});
 
-function btnHidden_payment() {
-  var x = document.getElementById("add-card");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}

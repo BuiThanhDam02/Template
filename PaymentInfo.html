@@ -540,9 +540,14 @@ Hội An
                                                         <div class="col-12 col-md-12">
                                                             <div class="display-form">
                                                                 <span>Thêm thẻ thanh toán</span>
-                                                                <a onclick="btnHidden_payment()" class="fw-bold text-underline toggle-edit-form">Chỉnh sửa</a>
+                                                                <a id="btn9"
+                                                                class="fw-bold text-underline toggle-edit-form"
+                                                                class="d-inline-flex align-items-center rounded collapsed"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#add-card"
+                                                                aria-expanded="false">Chỉnh sửa</a>
                                                             </div>
-                                                            <div class="edit-form btn-hidden" id="add-card">
+                                                            <div class="edit-form collapse" id="add-card">
                                                                 <div class="edit-form-wrapper">
                                                                     <div class="row">
                                                                         <div class="col-12">
@@ -686,6 +691,18 @@ Hội An
     <script src="assets/js/main.js"></script>
     <script src="assets/js/profile.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script>
+        const btn9= document.getElementById('btn9');
+btn9.addEventListener('click', function handleClick() {
+  const initialText = 'Chỉnh sửa';
+  if (btn9.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn9.textContent = 'Huỷ';
+  } else {
+    btn9.textContent = initialText;
+  }
+});
+    </script>
 </body>
 
 </html>

@@ -6,8 +6,8 @@
    align-items: center;
 }
 
-.btn-hidden{
-    display: none;
+.profile-wrapper .container{
+    display: flex;
 }
 
 .ps-md-4{
@@ -15,13 +15,12 @@
     width: 920px;
     border: 1px solid #cad2c5;
     border-radius: 10px;
+    display: flex;
 }
 
-/* .container_profile{
+.container_profile{
    display: flex;
-   justify-content: center;
-   align-items: center;
-} */
+}
 
 .content{
     display: flex;
