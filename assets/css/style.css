@@ -768,7 +768,7 @@ table tfoot tr th {
 }
 
 .breadcrumb-style-one {
-    background: url(../images/banner/breadcrumb-bg.png) no-repeat center;
+    background: url(../images/banner/breadcrumb-bg.jpg) no-repeat center;
     background-size: cover;
     padding: 150px 0
 }
@@ -3160,7 +3160,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-four .slider-bg-1 {
     padding: 300px 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner41.png");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner41.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -3181,7 +3181,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-four .slider-bg-2 {
     padding: 300px 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner42.png");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/banner/banner42.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -5912,7 +5912,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .testimonial-style-three {
-    background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../images/reviewer/review3-bg.png");
+    background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../images/reviewer/review3-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -6276,7 +6276,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .upcoming-tour-area {
-    background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../images/package/upcoming-bg.png");
+    background-image: linear-gradient(rgba(0, 5, 15, 0.6), rgba(0, 5, 15, 0.6)), url("../images/package/upcoming-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed
@@ -7975,7 +7975,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .more-update-section {
-    background: linear-gradient(91.22deg, rgba(0, 5, 15, 0.8) 24.54%, rgba(0, 5, 15, 0.2) 100%), url("../images/banner/update-bg.png");
+    background: linear-gradient(91.22deg, rgba(0, 5, 15, 0.8) 24.54%, rgba(0, 5, 15, 0.2) 100%), url("../images/banner/update-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 90px 30px
@@ -8042,6 +8042,7 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
     height: 420px;
     margin-bottom: 20px;
 }
+
 
 
 
