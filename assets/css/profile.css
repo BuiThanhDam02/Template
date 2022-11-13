@@ -115,3 +115,89 @@
 .setting-item .row .col-12 .edit-form{
 position: relative;
 }
+.tour-list{
+    display: flex; flex-direction: column;
+    height: 250px;
+  overflow: auto;
+  width: 900px;
+  gap: 1rem;
+ 
+}
+.tour-list::-webkit-scrollbar{
+    width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+.tour-item{
+    display: flex;gap: 0.5rem; 
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    box-shadow: 0px 5px 5px 0px rgba(58, 58, 58, 0.5); 
+    align-items: center;
+}
+.tour-item .tour-item-first-side{
+    font-weight: 600;
+    font-size: 17px;
+    color:  #2d4271;
+    
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tour-item .tour-item-first-side span span{
+    color: red;
+    font-weight: 500;
+}
+.tour-item .tour-item-first-side>span:nth-of-type(1){
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.tour-item .tour-item-second-side span{
+    color: black;
+    font-size: 14px;
+}
+.tour-item .tour-item-second-side .tour-item-second-side-start p{
+    font-weight: 600;
+    color: #2d7133;
+}
+.tour-item .tour-item-second-side .tour-item-second-side-end p{
+    font-weight: 600;
+    color: #97a13c;
+}
+.tour-item .tour-item-third-side p span{
+font-size: 1rem;
+font-weight: 500;
+}
+.tour-item .tour-item-third-side span{
+    font-weight: 500;
+}
+.tour-item .tour-item-third-side span span{
+    color: red
+}
+.tour-item .tour-item-four-side .bound{
+    border-radius: 10px;
+    width: 50px;
+    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tour-item .tour-item-four-side .bound span{
+    color:white;
+    font-size: 14px;
+    text-align: center;
+}
+.tour-item .tour-item-four-side .dahuy{
+background: rgb(216, 0, 0);
+}
+.tour-item .tour-item-four-side .choxacnhan{
+background: rgb(0, 0, 226);
+}
+.tour-item .tour-item-four-side .dadat{
+background: green;
+}

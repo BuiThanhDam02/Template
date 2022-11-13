@@ -144,7 +144,7 @@ Hội An
             </div>
             <div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
@@ -152,7 +152,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
@@ -160,7 +160,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
@@ -168,7 +168,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
@@ -176,7 +176,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
@@ -184,7 +184,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
@@ -192,7 +192,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
@@ -297,7 +297,7 @@ Hội An
 
     <div class="guide-wrapper  pt-80">
         <div class="container">
-            <div class="row">
+            <div class="row" id="group-item">
                 <div class="col-lg-4 col-md-6">
                     <div class="guide-card-gamma">
                         <div class="guide-image">
@@ -480,8 +480,8 @@ Hội An
                 <div class="col-lg-12">
                     <nav>
                         <ul class="pagination pagination-style-one justify-content-center pt-80">
-                            <li class="page-item page-arrow mx-4"><a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a></li>
-                            <li class="page-item page-arrow mx-4"><a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a></li>
+                            <!-- <li class="page-item page-arrow mx-4"><a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a></li>
+                            <li class="page-item page-arrow mx-4"><a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a></li> -->
                         </ul>
                     </nav>
                 </div>
@@ -516,11 +516,11 @@ Hội An
                             <h4 class="footer-widget-title">Quick Link</h4>
                             <ul class="footer-links">
                                 <li><a href="about.html">Về chúng tôi</a></li>
-                                <li><a href="package.html">Các Tour du lịch</a></li>
+                                <li><a href="package-sidebar.html">Các Tour du lịch</a></li>
                                 <li><a href="destination.html">Điểm đến</a></li>
                                 <li><a href="guide.html">Hướng dẫn viên</a></li>
                                
-                                <li><a href="blog.html">Tin tức</a></li>
+                                <li><a href="blog-standard.html">Tin tức</a></li>
                             </ul>
                         </div>
                     </div>
@@ -576,6 +576,105 @@ Hội An
     <script src="assets/js/jquery-ui.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script>
+        jQuery(function () {
+            let list = $('#group-item');
+            let listProducts = list.children();
+            let productNum = listProducts.length;
+            let displayProduct = 9;
+            let paginationNum =  Math.ceil(productNum / displayProduct) ;
+            
+            let ulPagination = $('.pagination');
+            let listIndex = ulPagination.children(".page-item-index");
+            for (let index = 0; index < paginationNum; index++) {
+                if (index ===0) {                   
+                    ulPagination.append(`
+                            <li class="page-item page-item-index active">
+                                <a class="page-link" href="#" style="text-align: center;" >${index+1}</a>
+                            </li>
+                    `);
+                }else{
+                    ulPagination.append(`
+                            <li class="page-item page-item-index">
+                                <a class="page-link" href="#" style="text-align: center;" >${index+1}</a>
+                            </li>
+                    `);
+                }
+                
+            };
+          
+                 for (let j = 0; j < listProducts.length; j++) {
+                   listProducts[j].classList.add('display-hide');
+                    
+                };
+                if (ulPagination.children().length > 6) {
+                for (let index = 0; index < ulPagination.children().length; index++) {
+                        ulPagination.children()[index].classList.add('display-hide')
+                        
+                    }
+                    ulPagination.children()[0].classList.remove('display-hide');
+                    ulPagination.children()[ulPagination.children().length-1].classList.remove('display-hide');
+                    ulPagination.children()[1].classList.remove('display-hide');
+            }
+            function displayItem(listProducts,list,displayProduct,page) {
+                page--;
+                for (let j = 0; j < listProducts.length; j++) {
+                   listProducts[j].classList.remove('display-hide');
+                    
+                }
+                for (let j = 0; j < listProducts.length; j++) {
+                   listProducts[j].classList.add('display-hide');
+                    
+                }
+                let loop_start = displayProduct * page;
+                let renderItem = listProducts.slice(loop_start,loop_start+displayProduct);
+                for (let index = 0; index < renderItem.length; index++) {
+                    renderItem[index].classList.toggle('display-hide');   
+                }
+            };
+            displayItem(listProducts,list,displayProduct,1);
+           
+            jQuery(function () {
+          
+            jQuery(".page-item-index").click(function (e) {
+                let len = ulPagination.children().length;
+                let eIndex = 0;
+                if (len > 6){
+                    for (let index = 0; index < len; index++) {
+                        ulPagination.children()[index].classList.add('display-hide')
+                        if (ulPagination.children()[index].isEqualNode(e.currentTarget)) {
+                            eIndex = index; 
+                        }
+                    }
+                    if (eIndex > 0 && eIndex < len-1) {
+                        
+                        ulPagination.children()[0].classList.remove('display-hide');
+                        ulPagination.children()[len-1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex].classList.remove('display-hide');
+                        ulPagination.children()[eIndex -1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex+1].classList.remove('display-hide');
+                    }else if(eIndex === 0 && eIndex < len-1) {
+                        ulPagination.children()[eIndex+1].classList.remove('display-hide');
+                        ulPagination.children()[len-1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex].classList.remove('display-hide');
+                    }else if(eIndex > 0 && eIndex === len-1){
+                        ulPagination.children()[0].classList.remove('display-hide');
+                        ulPagination.children()[len-1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex].classList.remove('display-hide');
+                        ulPagination.children()[eIndex -1].classList.remove('display-hide');
+                        
+                    }
+                }
+                for (let k = 0; k < ulPagination.children().length; k++) {
+                ulPagination.children()[k].classList.remove('active')
+                
+                }
+                e.currentTarget.classList.add('active')
+                displayItem(listProducts,list,displayProduct,parseInt(e.currentTarget.innerText));
+                 });
+            });
+        });
+    </script>
 </body>
 
 </html>

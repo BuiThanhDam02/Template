@@ -144,7 +144,7 @@ Hội An
             </div>
             <div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
@@ -152,7 +152,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
@@ -160,7 +160,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
@@ -168,7 +168,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
@@ -176,7 +176,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
@@ -184,7 +184,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
@@ -192,7 +192,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
@@ -298,230 +298,31 @@ Hội An
     <div class="package-sidebar-wrapper pt-80">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8" id="bound-parent">
+                    <div class="row" style="margin-bottom: 1rem;">
+                        <div class="col-lg-4 right">
+                            <select id="filter-sort-tour" style="border: 1px solid var(--c-primary);">
+                                <option selected>Lựa chọn lọc</option>
+                                <option value="price-asc">Sắp xếp theo giá tiền tăng dần</option>
+                                <option value="price-desc">Sắp xếp theo giá tiền giảm dần</option>
+                                <option value="new">Sắp xếp theo theo mới nhất</option>
+                            </select>
+                        </div>
+                        
+                    </div>
                     <div class="row" id="group-item">
                         <!-- 10 sp dau tien -->
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-nhatrang.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>3 Ngày và 2 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH NHA TRANG</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>3.990.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-dalat.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>3 Ngày và 2 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: TÀ ĐÙNG - ĐÀ LẠT</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>2.490.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-phuquoc.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>3 Ngày và 2 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH ĐẢO NGỌC PHÚ QUỐC</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>5.290.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-longhai.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>5 Ngày và 6 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: BIỂN LONG HẢI
-</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>690.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-vungtau.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>1 Day</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: BIỂN BÀ RỊA - VŨNG TÀU</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>1.890.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-ninhthuan.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>4 Ngày và 3 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: NINH THUẬN - NINH CHỮ - VĨNH HY</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>2.690.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 "  >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-phanthiet.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>3 Ngày và 2 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH PHAN THIẾT</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>1.890.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6  " >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-vungtau.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>2 Ngày và 1 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: ĐẢO BÌNH BA - CAM RANH</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>1.490.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6  " >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-vungtau.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>2 Ngày và 1 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: ĐẢO BÌNH BA - CAM RANH</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>1.490.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6  " >
-                            <div class="package-card-alpha">
-                                <div class="package-thumb">
-                                    <a href="package-details.html"><img src="assets/images/package/pa-vungtau.jpg" alt=""></a>
-                                    <p class="card-lavel">
-                                        <i class="bi bi-clock"></i> <span>2 Ngày và 1 Đêm</span>
-                                    </p>
-                                </div>
-                                <div class="package-card-body">
-                                    <h3 class="p-card-title"><a href="package-details.html">DU LỊCH: ĐẢO BÌNH BA - CAM RANH</a></h3>
-                                    <div class="p-card-bottom">
-                                        <div class="book-btn">
-                                            <a href="package-details.html">Đặt Ngay <i class='bx bxs-right-arrow-alt'></i></a>
-                                        </div>
-                                        <div class="p-card-info">
-                                            <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
-                                            <h6>1.490.000 ₫ <span>1 Người</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                         
+                      
+                      
+                     
+                     
+                       
+                      
+                       
+                      
+                        
+                        
  
                         <!-- end -->
                     </div>
@@ -529,12 +330,6 @@ Hội An
                         <div class="col-lg-12">
                             <nav>
                                 <ul id="pagination-demo" class="pagination pagination-style-one justify-content-center pt-80">
-                                    <!-- <li class="page-item page-arrow"><a class="page-link" href="#"><i class="bi bi-chevron-double-left"></i></a></li>
-                                    <li class="page-item page-item-index active"><a class="page-link" href="#">01</a></li>
-                                    <li class="page-item page-item-index"><a class="page-link" href="#">02</a></li>
-                                    <li class="page-item page-item-index"><a class="page-link" style="text-align: center;" href="#">03</a></li>
-                                    <li class="page-item page-item-index"><a class="page-link" href="#">04</a></li>
-                                    <li class="page-item page-arrow"><a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a></li> -->
                                 </ul>
                             </nav>
                         </div>
@@ -862,11 +657,11 @@ Trên 5 Người
                             <h4 class="footer-widget-title">Quick Link</h4>
                             <ul class="footer-links">
                                 <li><a href="about.html">Về chúng tôi</a></li>
-                                <li><a href="package.html">Các Tour du lịch</a></li>
+                                <li><a href="package-sidebar.html">Các Tour du lịch</a></li>
                                 <li><a href="destination.html">Điểm đến</a></li>
                                 <li><a href="guide.html">Hướng dẫn viên</a></li>
                                
-                                <li><a href="blog.html">Tin tức</a></li>
+                                <li><a href="blog-standard.html">Tin tức</a></li>
                             </ul>
                         </div>
                     </div>
@@ -925,17 +720,21 @@ Trên 5 Người
     <script src="assets/js/main.js"></script>
     <script src="assets/js/paginationJQUERY.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./100sp.js">
+        
+    </script>
     <script>
         jQuery(function () {
-            const list = $('#group-item');
-            const listProducts = list.children();
+            let list = $('#group-item');
+            let listProducts = list.children();
+            let boundParent = $('#bound-parent');
+            let productNum = listProducts.length;
+            let displayProduct = 8;
+            let paginationNum =  Math.ceil(productNum / displayProduct) ;
+            console.log(boundParent.children()[1])
+            let ulPagination = $('#pagination-demo');
+            let listIndex = ulPagination.children(".page-item-index");
             
-            const productNum = listProducts.length;
-            const displayProduct = 8;
-            const paginationNum =  Math.ceil(productNum / displayProduct) ;
-            console.log(paginationNum)
-            const ulPagination = $('#pagination-demo');
-            const listIndex = ulPagination.children(".page-item-index");
             for (let index = 0; index < paginationNum; index++) {
                 if (index ===0) {                   
                     ulPagination.append(`
@@ -957,6 +756,15 @@ Trên 5 Người
                    listProducts[j].classList.add('display-hide');
                     
                 };
+            if (ulPagination.children().length > 6) {
+                for (let index = 0; index < ulPagination.children().length; index++) {
+                        ulPagination.children()[index].classList.add('display-hide')
+                        
+                    }
+                    ulPagination.children()[0].classList.remove('display-hide');
+                    ulPagination.children()[ulPagination.children().length-1].classList.remove('display-hide');
+                    ulPagination.children()[1].classList.remove('display-hide');
+            }
             function displayItem(listProducts,list,displayProduct,page) {
                 page--;
                 for (let j = 0; j < listProducts.length; j++) {
@@ -978,6 +786,34 @@ Trên 5 Người
             jQuery(function () {
           
             jQuery(".page-item-index").click(function (e) {
+                let len = ulPagination.children().length;
+                let eIndex = 0;
+                if (len > 6){
+                    for (let index = 0; index < len; index++) {
+                        ulPagination.children()[index].classList.add('display-hide')
+                        if (ulPagination.children()[index].isEqualNode(e.currentTarget)) {
+                            eIndex = index; 
+                        }
+                    }
+                    if (eIndex > 0 && eIndex < len-1) {
+                        
+                        ulPagination.children()[0].classList.remove('display-hide');
+                        ulPagination.children()[len-1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex].classList.remove('display-hide');
+                        ulPagination.children()[eIndex -1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex+1].classList.remove('display-hide');
+                    }else if(eIndex === 0 && eIndex < len-1) {
+                        ulPagination.children()[eIndex+1].classList.remove('display-hide');
+                        ulPagination.children()[len-1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex].classList.remove('display-hide');
+                    }else if(eIndex > 0 && eIndex === len-1){
+                        ulPagination.children()[0].classList.remove('display-hide');
+                        ulPagination.children()[len-1].classList.remove('display-hide');
+                        ulPagination.children()[eIndex].classList.remove('display-hide');
+                        ulPagination.children()[eIndex -1].classList.remove('display-hide');
+                        
+                    }
+                }
                 for (let k = 0; k < ulPagination.children().length; k++) {
                 ulPagination.children()[k].classList.remove('active')
                 
@@ -987,6 +823,82 @@ Trên 5 Người
                  });
             });
 
+            const filterSortTour = $('#filter-sort-tour');
+            filterSortTour.on('change' , function (e) {
+                var valueSelected = this.value;
+                function convertToMoney(e) {
+                var moneyNode = e.getElementsByClassName('p-card-info')[0];
+                var moneyText = moneyNode.getElementsByTagName('h6')[0].innerText;
+                var moneyTextList = moneyText.split(' ');
+                var moneyTextString =parseInt(moneyTextList[0].split('.').join(''));
+                return moneyTextString;
+                }
+                
+               
+                function convertToDate(e) {
+                    var dateString = e.getElementsByClassName('is-new-tour')[0].id;
+                    
+                    
+                    return Date.parse(dateString);
+                }
+              
+                
+               if (valueSelected ==='price-desc') {
+                   
+                   jQuery(function () {
+                       const newListProducts = listProducts.sort((a,b) => convertToMoney(b) - convertToMoney(a));
+                       
+                       list.children().remove()
+                       for (let index = 0; index < newListProducts.length; index++) {
+                           //     list.append(`${listProducts[index].outerHTML}`)
+                           list.children().remove()
+                       }
+                       for (let i = 0; i < newListProducts.length; i++) {
+                           
+                           list.append(newListProducts[i].outerHTML)
+                           
+                       }
+                       listProducts = list.children();
+                       displayItem(listProducts,list,displayProduct,1)
+                   })
+               }else if (valueSelected === 'price-asc') {
+                jQuery(function () {
+                       const newListProducts = listProducts.sort((a,b) => convertToMoney(a) - convertToMoney(b));
+                       
+                       list.children().remove()
+                       for (let index = 0; index < newListProducts.length; index++) {
+                           //     list.append(`${listProducts[index].outerHTML}`)
+                           list.children().remove()
+                       }
+                       for (let i = 0; i < newListProducts.length; i++) {
+                           
+                           list.append(newListProducts[i].outerHTML)
+                           
+                       }
+                       listProducts = list.children();
+                       displayItem(listProducts,list,displayProduct,1)
+                   })
+               }else if(valueSelected === 'new'){
+                 jQuery(function () {
+                       const newListProducts = listProducts.sort((a,b) => convertToDate(b) - convertToDate(a));
+                       
+                       list.children().remove()
+                       for (let index = 0; index < newListProducts.length; index++) {
+                           //     list.append(`${listProducts[index].outerHTML}`)
+                           list.children().remove()
+                       }
+                       for (let i = 0; i < newListProducts.length; i++) {
+                           
+                           list.append(newListProducts[i].outerHTML)
+                           
+                       }
+                       listProducts = list.children();
+                       displayItem(listProducts,list,displayProduct,1)
+                   })
+               }
+                
+
+            });
         });
     </script>
 </body>

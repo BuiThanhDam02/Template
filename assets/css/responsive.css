@@ -1150,3 +1150,35 @@
         padding: 180px 0
     }
 }
+
+.is-new-tour{
+    background-color: rgb(236, 75, 0);
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+.is-new-tour span{
+    text-align: center;
+    font-weight: 600;
+}
+.display-hide{
+    display: none;
+}
+.package-card-body .p-card-title a{
+    font-size: 16px;
+}
+#pagination-demo{
+display: grid;
+grid-template-columns: 60px 60px 60px 60px 60px;
+
+}
+#pagination-demo .page-item-index{
+    width: 50px;
+    height: 50px;
+}

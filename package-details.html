@@ -144,7 +144,7 @@ Hội An
             </div>
             <div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
@@ -152,7 +152,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
@@ -160,7 +160,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
@@ -168,7 +168,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
@@ -176,7 +176,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
@@ -184,7 +184,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
@@ -192,7 +192,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
@@ -362,7 +362,10 @@ Hội An
                                         <li><i class="bi bi-star-fill"></i></li>
                                     </ul>
                                 </div>
-                                <h2 class="pd-title">DU LỊCH NHA TRANG</h2>
+                                <div class="pd-lavel d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                    <h2 class="pd-title">DU LỊCH NHA TRANG</h2>
+                                    <div title="Thêm vào yêu thích" style="color: red;font-size: 2rem;cursor: pointer;"><i class='bx bxs-heart'></i></div>
+                                </div>
                                 <span>Số còn nhận <span style="color: var(--c-primary);">6</span></span>
                             </div>
                         </div>
@@ -896,57 +899,9 @@ Hội An
                                 <h3 class="widget-lavel">2.990.000 ₫ <span>1 Người</span></h3>
                             </div>
                             <div class="widget-body">
-                                <form action="#" method="post" id="booking-form">
+                                <form action="./Booking-Tour.html" id="booking-form">
                                     <div class="booking-form-wrapper">
-                                        <div class="custom-input-group">
-                                            <input type="text" placeholder="Họ Tên" id="name">
-                                        </div>
-                                        <div class="custom-input-group">
-                                            <input type="email" placeholder="Email" id="email">
-                                        </div>
-                                        <div class="custom-input-group">
-                                            <input type="tel" placeholder="Số Điện Thoại" id="phone">
-                                        </div>
-                                        <div class="custom-input-group">
-                                            <i class="bi bi-chevron-down"></i>
-                                            <select id="ticket_type">
-<option selected>Loại Vé</option>
-<option value="1">Tickets Type 1</option>
-<option value="2">Tickets Type 2</option>
-<option value="3">Tickets Type 3</option>
-</select>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="custom-input-group">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                    <select id="truist-adult">
-<option selected>Người Lớn</option>
-<option value="1"> 1</option>
-<option value="2"> 2</option>
-<option value="3"> 3</option>
-</select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="custom-input-group ">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                    <select id="tourist-child">
-<option selected>Trẻ Em</option>
-<option value="1"> 1</option>
-<option value="2">2</option>
-<option value="3"> 3</option>
-</select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-input-group">
-                                            <i class="bi bi-calendar3"></i>
-                                            <input placeholder="Chọn Ngày" type="text" name="checkIn" id="datepicker2" value="" class="calendar">
-                                        </div>
-                                        <div class="custom-input-group">
-                                            <textarea cols="20" rows="7" placeholder="Tin Nhắn"></textarea>
-                                        </div>
+                                       
                                         <div class="custom-input-group">
                                             <div class="submite-btn">
                                                 <button type="submit">Đặt Ngay</button>
@@ -954,6 +909,7 @@ Hội An
                                         </div>
                                     </div>
                                 </form>
+                                
                             </div>
                         </aside>
                         <aside class="package-widget-style-2 widget-recent-package-entries mt-30">
@@ -1056,11 +1012,11 @@ Hội An
                             <h4 class="footer-widget-title">Quick Link</h4>
                             <ul class="footer-links">
                                 <li><a href="about.html">Về chúng tôi</a></li>
-                                <li><a href="package.html">Các Tour du lịch</a></li>
+                                <li><a href="package-sidebar.html">Các Tour du lịch</a></li>
                                 <li><a href="destination.html">Điểm đến</a></li>
                                 <li><a href="guide.html">Hướng dẫn viên</a></li>
                                
-                                <li><a href="blog.html">Tin tức</a></li>
+                                <li><a href="blog-standard.html">Tin tức</a></li>
                             </ul>
                         </div>
                     </div>

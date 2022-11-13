@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TravelLab - Khám phá đất nước của chúng ta</title>
+    <title>TraveLab - Khám phá đất nước của chúng ta</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,18 +11,40 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
 
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='assets/css/boxicons.min.css' rel='stylesheet'> -->
 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+  <style>
+      .go-tour{
+          display: flex;
+          justify-content: space-around;
+          gap: 1rem;
+      };
+      .time{
+       color: #2d4271;
+      }
+     .detail table {
+    width: 100%;
+};
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    
+};
+
+  </style>
 
     <div class="preloader">
         <div class="loader">
@@ -142,7 +164,7 @@ Hội An
             </div>
             <div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate1.svg" alt="">
                         </div>
@@ -150,7 +172,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate2.svg" alt="">
                         </div>
@@ -158,7 +180,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate3.svg" alt="">
                         </div>
@@ -166,7 +188,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate4.svg" alt="">
                         </div>
@@ -174,7 +196,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate5.svg" alt="">
                         </div>
@@ -182,7 +204,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate6.svg" alt="">
                         </div>
@@ -190,7 +212,7 @@ Hội An
                     </a>
                 </div>
                 <div class="col">
-                    <a class="category-box" href="package.html">
+                    <a class="category-box" href="package-sidebar.html">
                         <div class="cate-icon mx-auto">
                             <img src="assets/images/icons/cate7.svg" alt="">
                         </div>
@@ -200,7 +222,6 @@ Hội An
             </div>
         </div>
     </div>
-
 
     <header>
         <div class="header-area header-style-one">
@@ -237,35 +258,26 @@ Hội An
                             </div>
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html"><span style="font-size: 15px;">Trang Chủ</span></a>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html"><span style="font-size: 15px;">Về Chúng Tôi</span></a></li>
                                 <li >
-                                    <a href="destination.html">Destination</a>
+                                    <a href="destination.html"><span style="font-size: 15px;">Điểm Đến</span></a>
                                     
                                 </li>
                                 <li >
-                                    <a href="package-sidebar.html">Package</a>
+                                    <a href="package-sidebar.html"><span style="font-size: 15px;">Du Lịch</span></a>
                                 </li>
                                 <li >
-                                    <a href="blog-standard.html">Tin tức</a>
+                                    <a href="blog-standard.html"><span style="font-size: 15px;">Tin tức</span></a>
                                 
                                 </li>
-                                <li class="has-child-menu">
-                                    <a href="javascript:void(0)">Pages</a>
-                                    <i class="fl flaticon-plus">+</i>
-                                    <ul class="sub-menu">
-                                        <li><a href="guide.html">Guide</a></li>
-                                        
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="guide.html"><span style="font-size: 15px;">Hướng Dẫn Viên</span></a></li>
+                                <li><a href="contact.html"><span style="font-size: 15px;">Liên Hệ</span></a></li>
                             </ul>
                             <div class="inner-contact-options d-xl-none">
                                 <div class="contact-box-inner"><i class="bi bi-telephone-fill"></i> <a href="tel:+17632275032">+1 763-227-5032</a></div>
-                                <div class="contact-box-inner"><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#3c55525a537c59445d514c5059125f5351"><span class="__cf_email__" data-cfemail="442d2a222b04213c25293428216a272b29">[email&#160;protected]</span></a></div>
+                                <div class="contact-box-inner"><i class="bi bi-envelope-fill"></i> <a href="/cdn-cgi/l/email-protection#4b22252d240b2e332a263b272e65282426"><span class="__cf_email__" data-cfemail="dcb5b2bab39cb9a4bdb1acb0b9f2bfb3b1">[email&#160;protected]</span></a></div>
                             </div>
                         </nav>
                     </div>
@@ -276,7 +288,10 @@ Hội An
                                     <i class='bx bx-category'></i>
                                 </li>
                                 <li class="search-toggle">
-                                    <i class='bx bx-search-alt'></i>
+                                    <i class='bx bx-search' ></i>
+                                </li>
+                                <li class="profile-toggle">
+                                    <a href="./sign.html"><i class='bx bx-user' ></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -290,161 +305,67 @@ Hội An
     <div class="breadcrumb breadcrumb-style-one">
         <div class="container">
             <div class="col-lg-12 text-center">
-                <h2 class="breadcrumb-title">FAQ</h2>
+                <h2 class="breadcrumb-title">Đặt Tour</h2>
                 <ul class="d-flex justify-content-center breadcrumb-items">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">FAQ</li>
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">Đặt Tour</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="faq-wrapper pt-76">
+
+    <div class="error-wrapper pt-100">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="faqs mt-30">
-                        <h2>Frequently <span>Asked </span><br> Question
-                        </h2>
-                        <div class="accordion faq-accordion accordion-flush" id="faq-accordion-example">
-                            <div class="accordion-item faq-accordion">
-                                <h2 class="accordion-header" id="faq-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="false" aria-controls="faq-collapseOne">
-Nulla sed volutpat libero In consequat feugia?
-</button>
-                                </h2>
-                                <div id="faq-collapseOne" class="accordion-collapse collapse  show" aria-labelledby="faq-headingOne" data-bs-parent="#faq-accordion-example">
-                                    <div class="accordion-body">
-                                        <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula. Quisque eget volutpat purus. Aenean blandit magna maximus landi quam
-                                            facilisis, tempor porttitor elit hendrerit. Aliquam cursus arcu vel bibendum pulvinar.</p>
-                                        <div class="row pt-2">
-                                            <div class="col-xl-6">
-                                                <ul class="faq-list">
-                                                    <li><strong>01.</strong> Nullam eget mauris imperdiet turpis.</li>
-                                                    <li><strong>02.</strong> lacus mi dictum urna, quis cursus.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <ul class="faq-list">
-                                                    <li><strong>03.</strong> Sed feugiat sed erat sed eleifend. Done velit.</li>
-                                                    <li><strong>04.</strong> augue dignissim Sed vel molestie ligula.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="error-content text-center">
+                        <h2>Thanh toán</h2>
+                        <form action="#" method="post" id="booking-form">
+                            <div class="booking-form-wrapper">
+                               
+                                
+                                    <div class="custom-input-group ">
+                                        <i class="bi bi-chevron-down"></i>
+                                        <select id="card-list">
+                                            <option selected>Chọn thẻ</option>
+                                            <option value="1012353636">1012353636 - Ngân hàng VCBank</option>
+                                            <option value="314430002842">314430002842 - Ngân hàng BIDV</option>
+
+                                        </select>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item faq-accordion">
-                                <h2 class="accordion-header" id="faq-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
-Aenean tempor ac odio ut placerat. Pellentesque ut?
-</button>
-                                </h2>
-                                <div id="faq-collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq-headingTwo" data-bs-parent="#faq-accordion-example">
-                                    <div class="accordion-body">
-                                        <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula. Quisque eget volutpat purus. Aenean blandit magna maximus landi quam
-                                            facilisis, tempor porttitor elit hendrerit. Aliquam cursus arcu vel bibendum pulvinar.</p>
+                                    
+                                    <span style="color: black; font-weight: 500;">Hoặc thêm thẻ nếu quý khách chưa có</span>
+                                   
+                                    <div class="custom-input-group">
+                                        <input type="text" placeholder="Tên trên thẻ" id="name">
+                                        <input type="number" placeholder="Số thẻ" id="numberCard">
+                                        <input type="date" id="cardExpiredDate" placeholder="MM/YY" class="form-control" aria-describedby="cardExpiredDateBlock" />
+                                        <select id="card-list" style="border: 1px solid #ced4da;">
+                                            <option selected>Chọn thẻ</option>
+                                            <option value="Ngân hàng VCBank">Ngân hàng VCBank</option>
+                                            <option value="Ngân hàng BIDV">Ngân hàng BIDV</option>
+                                            
+                                        </select>  
+                                        
                                     </div>
-                                </div>
                             </div>
-                            <div class="accordion-item faq-accordion">
-                                <h2 class="accordion-header" id="faq-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
-Donec ullamcorper dolor vel elit facilisis egestas?
-</button>
-                                </h2>
-                                <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree" data-bs-parent="#faq-accordion-example">
-                                    <div class="accordion-body">
-                                        <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula. Quisque eget volutpat purus. Aenean blandit magna maximus landi quam
-                                            facilisis, tempor porttitor elit hendrerit. Aliquam cursus arcu vel bibendum pulvinar.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item faq-accordion">
-                                <h2 class="accordion-header" id="faq-headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFour" aria-expanded="false" aria-controls="faq-collapseFour">
-Ut iaculis vulputate odio ac laoreet. Aliquam euontep bunt?
-</button>
-                                </h2>
-                                <div id="faq-collapseFour" class="accordion-collapse collapse" aria-labelledby="faq-headingFour" data-bs-parent="#faq-accordion-example">
-                                    <div class="accordion-body">
-                                        <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula. Quisque eget volutpat purus. Aenean blandit magna maximus landi quam
-                                            facilisis, tempor porttitor elit hendrerit. Aliquam cursus arcu vel bibendum pulvinar.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item faq-accordion">
-                                <h2 class="accordion-header" id="faq-headingFive">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFive" aria-expanded="false" aria-controls="faq-collapseFive">
-Suspendisse convallis dui eget orci mollis?
-</button>
-                                </h2>
-                                <div id="faq-collapseFive" class="accordion-collapse collapse" aria-labelledby="faq-headingFive" data-bs-parent="#faq-accordion-example">
-                                    <div class="accordion-body">
-                                        <p>Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt molestie turpis nec lacinia vehicula. Quisque eget volutpat purus. Aenean blandit magna maximus landi quam
-                                            facilisis, tempor porttitor elit hendrerit. Aliquam cursus arcu vel bibendum pulvinar.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="faq-sidebar mt-30">
-                        <div class="faq-topics">
-                            <h3>FAQ Topic</h3>
-                            <div class="radio-group">
-                                <input class="form-check-input" type="radio" name="radioGroup" id="radioGroup1">
-                                <label class="form-check-label" for="radioGroup1">
-General Question
-</label>
-                            </div>
-                            <div class="radio-group">
-                                <input class="form-check-input" type="radio" name="radioGroup" id="radioGroup2" checked>
-                                <label class="form-check-label" for="radioGroup2">
-Financial Topic
-</label>
-                            </div>
-                            <div class="radio-group">
-                                <input class="form-check-input" type="radio" name="radioGroup" id="radioGroup3" checked>
-                                <label class="form-check-label" for="radioGroup3">
-Privacy Policy
-</label>
-                            </div>
-                            <div class="radio-group">
-                                <input class="form-check-input" type="radio" name="radioGroup" id="radioGroup4" checked>
-                                <label class="form-check-label" for="radioGroup4">
-Other Questions
-</label>
-                            </div>
-                        </div>
-                        <form action="#" id="faq-form" method="post">
-                            <div class="faq-form">
-                                <h3>Ask Your Question</h3>
-                                <div class="custom-input-group">
-                                    <input type="text" placeholder="Your Name" id="name">
-                                </div>
-                                <div class="custom-input-group">
-                                    <input type="text" placeholder="Your Email" id="email">
-                                </div>
-                                <div class="custom-input-group">
-                                    <input type="tel" placeholder="Phone Number" id="phone">
-                                </div>
-                                <div class="custom-input-group">
-                                    <textarea cols="20" rows="6" placeholder="Your message"></textarea>
-                                </div>
+                              
+                              
                                 <div class="custom-input-group">
                                     <div class="submite-btn">
-                                        <button type="submit">Submit Now</button>
+                                        <button type="submit">Thanh toán</button>
                                     </div>
                                 </div>
-                            </div>
+                            
                         </form>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
+
 
     <div class="footer-area mt-110">
         <div class="footer-main-wrapper">
@@ -473,11 +394,11 @@ Other Questions
                             <h4 class="footer-widget-title">Quick Link</h4>
                             <ul class="footer-links">
                                 <li><a href="about.html">Về chúng tôi</a></li>
-                                <li><a href="package.html">Các Tour du lịch</a></li>
+                                <li><a href="package-sidebar.html">Các Tour du lịch</a></li>
                                 <li><a href="destination.html">Điểm đến</a></li>
                                 <li><a href="guide.html">Hướng dẫn viên</a></li>
                                
-                                <li><a href="blog.html">Tin tức</a></li>
+                                <li><a href="blog-standard.html">Tin tức</a></li>
                             </ul>
                         </div>
                     </div>
@@ -522,7 +443,6 @@ Other Questions
     </div>
 
 
-
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -534,6 +454,9 @@ Other Questions
     <script src="assets/js/jquery-ui.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script>
+       
+    </script>
 </body>
 
 </html>
